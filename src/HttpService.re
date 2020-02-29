@@ -1,8 +1,8 @@
 open Belt;
-open CurrencyExchangeModels;
+open AppModels;
+open AppSettings;
 
-let apiBaseUrl = "http://api.nbp.pl/api/exchangerates/rates/a";
-let url = currencyCode => {j|$apiBaseUrl/$currencyCode/|j};
+let url = currencyCode => {j|$nbpApiBaseUrl/$currencyCode/|j};
 
 type jsonExchangeRateItem = {
   no: string,
@@ -38,20 +38,25 @@ module JsonDecode = {
 
 module Dto = {
   let jsonToCurrencyExchangeModel =
-      (~json: jsonExchangeRateResponse): option(currencyExchangeRatePoint) => {
+      (~json: jsonExchangeRateResponse): currencyExchangeRatePoint => {
     switch (List.fromArray(json.rates)) {
-    | [] => None
-    | [head, ..._] =>
-      Some({
+    | [] => {
         currencyCode: json.code,
-        exchangeRate: head.mid,
-        date: head.effectiveDate,
-      })
+        point: None
+    }
+    | [head, ..._] =>
+      {
+        currencyCode: json.code,
+        point: Some({
+          rate: head.mid,
+          date: head.effectiveDate,
+        })
+      }
     };
   };
 };
 
-let fetchData = (currencyCode, callback) => {
+let fetchCurrency = (currencyCode) => {
   Js.Promise.(
     Fetch.fetch(url(currencyCode))
     |> then_(Fetch.Response.json)
@@ -60,11 +65,26 @@ let fetchData = (currencyCode, callback) => {
          |> JsonDecode.exchangeRateDecoder
          |> (
            transformed => {
-             callback(Dto.jsonToCurrencyExchangeModel(transformed))
-             resolve();
+             resolve(Dto.jsonToCurrencyExchangeModel(transformed));
            }
          )
        )
-    |> ignore
   );
 };
+
+let fetchCurrencies = (currencyCodes: list(string), callback) => {
+  Js.Promise.(
+    Js.Promise.all(
+      List.toArray(
+        List.map(currencyCodes, 
+          code => fetchCurrency(code)
+        )
+      )
+    )
+    |> then_(response => {
+      callback(List.fromArray(response));
+      resolve();
+    })
+    |> ignore
+  );
+}

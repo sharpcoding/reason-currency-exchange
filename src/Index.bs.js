@@ -3,22 +3,8 @@
 
 var React = require("react");
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
-var HttpService$ReactHooksTemplate = require("./HttpService.bs.js");
-var ListItemsModels$ReactHooksTemplate = require("./ListItemsModels.bs.js");
-var ListItemsComponent$ReactHooksTemplate = require("./ListItemsComponent.bs.js");
+var MainComponent$ReactHooksTemplate = require("./MainComponent.bs.js");
 
-HttpService$ReactHooksTemplate.fetchData("CHF", (function (response) {
-        if (response !== undefined) {
-          console.log("succeeded with", response);
-          return /* () */0;
-        } else {
-          console.log("failed !");
-          return /* () */0;
-        }
-      }));
-
-ReactDOMRe.renderToElementWithId(React.createElement(ListItemsComponent$ReactHooksTemplate.make, {
-          items: ListItemsModels$ReactHooksTemplate.sampleCurrencies
-        }), "exchangeRatesList");
+ReactDOMRe.renderToElementWithId(React.createElement(MainComponent$ReactHooksTemplate.make, { }), "mainComponent");
 
 /*  Not a pure module */

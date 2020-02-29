@@ -3,11 +3,11 @@
 
 var React = require("react");
 var Belt_List = require("bs-platform/lib/js/belt_List.js");
-var ListItemsModels$ReactHooksTemplate = require("./ListItemsModels.bs.js");
+var ControlModels$ReactHooksTemplate = require("./ControlModels.bs.js");
 
-function reduced(item) {
+function actionsAsString(item) {
   return Belt_List.reduce(item[/* actions */2], "", (function (acc, el) {
-                return acc + ("; " + ListItemsModels$ReactHooksTemplate.actionToString(el));
+                return acc + ("; " + ControlModels$ReactHooksTemplate.actionToString(el));
               }));
 }
 
@@ -15,11 +15,11 @@ function ListItemComponent(Props) {
   var item = Props.item;
   return React.createElement("div", {
               key: item[/* id */0]
-            }, item[/* caption */1], " ", reduced(item));
+            }, item[/* caption */1], " ", actionsAsString(item));
 }
 
 var make = ListItemComponent;
 
-exports.reduced = reduced;
+exports.actionsAsString = actionsAsString;
 exports.make = make;
 /* react Not a pure module */

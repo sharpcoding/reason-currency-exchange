@@ -1,7 +1,7 @@
 open Belt;
-open ListItemsModels;
+open ControlModels;
 
-let reduced = (~item: listItem) => List.reduce(
+let actionsAsString = (~item: listItem) => List.reduce(
   item.actions, 
   "",
   (acc, el) => acc ++ "; " ++ actionToString(el));
@@ -12,6 +12,6 @@ let make = (~item: listItem) => {
   <div key={item.id}>
     {ReasonReact.string(item.caption)}
     {ReasonReact.string(" ")}
-    {ReasonReact.string(reduced(item))}
+    {ReasonReact.string(actionsAsString(item))}
   </div>;
 }

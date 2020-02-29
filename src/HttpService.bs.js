@@ -4,11 +4,10 @@
 var Curry = require("bs-platform/lib/js/curry.js");
 var Belt_List = require("bs-platform/lib/js/belt_List.js");
 var Json_decode = require("@glennsl/bs-json/src/Json_decode.bs.js");
-
-var apiBaseUrl = "http://api.nbp.pl/api/exchangerates/rates/a";
+var AppSettings$ReactHooksTemplate = require("./AppSettings.bs.js");
 
 function url(currencyCode) {
-  return "" + (String(apiBaseUrl) + ("/" + (String(currencyCode) + "/")));
+  return "" + (String(AppSettings$ReactHooksTemplate.nbpApiBaseUrl) + ("/" + (String(currencyCode) + "/")));
 }
 
 function exchangeRateItemDecoder(json) {
@@ -41,31 +40,43 @@ function jsonToCurrencyExchangeModel(json) {
     var head = match[0];
     return /* record */[
             /* currencyCode */json[/* code */2],
-            /* exchangeRate */head[/* mid */2],
-            /* date */head[/* effectiveDate */1]
+            /* point *//* record */[
+              /* rate */head[/* mid */2],
+              /* date */head[/* effectiveDate */1]
+            ]
+          ];
+  } else {
+    return /* record */[
+            /* currencyCode */json[/* code */2],
+            /* point */undefined
           ];
   }
-  
 }
 
 var Dto = {
   jsonToCurrencyExchangeModel: jsonToCurrencyExchangeModel
 };
 
-function fetchData(currencyCode, callback) {
-  fetch(url(currencyCode)).then((function (prim) {
-            return prim.json();
-          })).then((function (json) {
-          var transformed = exchangeRateDecoder(json);
-          Curry._1(callback, jsonToCurrencyExchangeModel(transformed));
+function fetchCurrency(currencyCode) {
+  return fetch(url(currencyCode)).then((function (prim) {
+                  return prim.json();
+                })).then((function (json) {
+                var transformed = exchangeRateDecoder(json);
+                return Promise.resolve(jsonToCurrencyExchangeModel(transformed));
+              }));
+}
+
+function fetchCurrencies(currencyCodes, callback) {
+  Promise.all(Belt_List.toArray(Belt_List.map(currencyCodes, fetchCurrency))).then((function (response) {
+          Curry._1(callback, Belt_List.fromArray(response));
           return Promise.resolve(/* () */0);
         }));
   return /* () */0;
 }
 
-exports.apiBaseUrl = apiBaseUrl;
 exports.url = url;
 exports.JsonDecode = JsonDecode;
 exports.Dto = Dto;
-exports.fetchData = fetchData;
+exports.fetchCurrency = fetchCurrency;
+exports.fetchCurrencies = fetchCurrencies;
 /* No side effect */

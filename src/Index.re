@@ -1,5 +1,5 @@
 open ListItemsModels;
 
-Js.log(sampleCurrencies);
+ExchangeData.fetchData("CHF");
 
 ReactDOMRe.renderToElementWithId(<ListItemsComponent items={Some(sampleCurrencies)} />, "exchangeRatesList");

@@ -3,10 +3,11 @@
 
 var React = require("react");
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
+var ExchangeData$ReactHooksTemplate = require("./ExchangeData.bs.js");
 var ListItemsModels$ReactHooksTemplate = require("./ListItemsModels.bs.js");
 var ListItemsComponent$ReactHooksTemplate = require("./ListItemsComponent.bs.js");
 
-console.log(ListItemsModels$ReactHooksTemplate.sampleCurrencies);
+ExchangeData$ReactHooksTemplate.fetchData("CHF");
 
 ReactDOMRe.renderToElementWithId(React.createElement(ListItemsComponent$ReactHooksTemplate.make, {
           items: ListItemsModels$ReactHooksTemplate.sampleCurrencies

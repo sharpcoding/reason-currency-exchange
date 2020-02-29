@@ -3,11 +3,19 @@
 
 var React = require("react");
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
-var ExchangeData$ReactHooksTemplate = require("./ExchangeData.bs.js");
+var HttpService$ReactHooksTemplate = require("./HttpService.bs.js");
 var ListItemsModels$ReactHooksTemplate = require("./ListItemsModels.bs.js");
 var ListItemsComponent$ReactHooksTemplate = require("./ListItemsComponent.bs.js");
 
-ExchangeData$ReactHooksTemplate.fetchData("CHF");
+HttpService$ReactHooksTemplate.fetchData("CHF", (function (response) {
+        if (response !== undefined) {
+          console.log("succeeded with", response);
+          return /* () */0;
+        } else {
+          console.log("failed !");
+          return /* () */0;
+        }
+      }));
 
 ReactDOMRe.renderToElementWithId(React.createElement(ListItemsComponent$ReactHooksTemplate.make, {
           items: ListItemsModels$ReactHooksTemplate.sampleCurrencies

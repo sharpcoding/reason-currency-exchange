@@ -1,3 +1,4 @@
+open Belt;
 open CurrencyExchangeModels;
 
 let apiBaseUrl = "http://api.nbp.pl/api/exchangerates/rates/a";
@@ -37,8 +38,8 @@ module JsonDecode = {
 
 module Dto = {
   let jsonToCurrencyExchangeModel =
-      (~json: jsonExchangeRateResponse): option(currencyExchangeSample) => {
-    switch (Belt.List.fromArray(json.rates)) {
+      (~json: jsonExchangeRateResponse): option(currencyExchangeRatePoint) => {
+    switch (List.fromArray(json.rates)) {
     | [] => None
     | [head, ..._] =>
       Some({
@@ -48,18 +49,9 @@ module Dto = {
       })
     };
   };
-  let jsonToCurrencyExchangeModel2 =
-      (~json: jsonExchangeRateResponse): currencyExchangeSample => {
-    let result: currencyExchangeSample = {
-      currencyCode: json.code,
-      exchangeRate: 2.33,
-      date: "222",
-    };
-    result;
-  };
 };
 
-let fetchData = currencyCode => {
+let fetchData = (currencyCode, callback) => {
   Js.Promise.(
     Fetch.fetch(url(currencyCode))
     |> then_(Fetch.Response.json)
@@ -68,7 +60,7 @@ let fetchData = currencyCode => {
          |> JsonDecode.exchangeRateDecoder
          |> (
            transformed => {
-             Js.log(Dto.jsonToCurrencyExchangeModel(transformed));
+             callback(Dto.jsonToCurrencyExchangeModel(transformed))
              resolve();
            }
          )

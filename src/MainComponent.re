@@ -53,7 +53,7 @@ let make = () => {
       (c: currencyExchangeRatePoint): listItem => {
     let rate = () => {
       switch (c.point) {
-      | Some(p) => string_of_float(p.rate)
+      | Some(p) => Js.Float.toString(p.rate)
       | None => "N/A"
       };
     };

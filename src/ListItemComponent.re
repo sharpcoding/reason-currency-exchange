@@ -1,7 +1,7 @@
 open Belt;
 open ControlModels;
 
-let actionsAsString = (~item: listItem) => List.reduce(
+let actionsAsString = (item: listItem) => List.reduce(
   item.actions, 
   "",
   (acc, el) => acc ++ "; " ++ actionToString(el));

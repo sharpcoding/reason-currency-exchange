@@ -4,7 +4,6 @@
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
 var Belt_List = require("bs-platform/lib/js/belt_List.js");
-var Pervasives = require("bs-platform/lib/js/pervasives.js");
 var AppSettings$ReactHooksTemplate = require("./AppSettings.bs.js");
 var HttpService$ReactHooksTemplate = require("./HttpService.bs.js");
 var ListItemComponent$ReactHooksTemplate = require("./ListItemComponent.bs.js");
@@ -74,7 +73,7 @@ function MainComponent(Props) {
     var rate = function (param) {
       var match = c[/* point */1];
       if (match !== undefined) {
-        return Pervasives.string_of_float(match[/* rate */0]);
+        return match[/* rate */0].toString();
       } else {
         return "N/A";
       }

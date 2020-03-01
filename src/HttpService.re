@@ -38,7 +38,7 @@ module JsonDecode = {
 
 module Dto = {
   let jsonToCurrencyExchangeModel =
-      (~json: jsonExchangeRateResponse): currencyExchangeRatePoint => {
+      (json: jsonExchangeRateResponse): currencyExchangeRatePoint => {
     switch (List.fromArray(json.rates)) {
     | [] => {
         currencyCode: json.code,

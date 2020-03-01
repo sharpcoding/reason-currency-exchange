@@ -3,7 +3,7 @@ type listItemAction =
   | MoveUp
   | MoveDown;
 
-let actionToString = (~action: listItemAction) => {
+let actionToString = (action: listItemAction) => {
     switch (action) {
     | Remove => "remove"
     | MoveUp => "move up"

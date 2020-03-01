@@ -13,9 +13,7 @@ function actionsAsString(item) {
 
 function ListItemComponent(Props) {
   var item = Props.item;
-  return React.createElement("div", {
-              key: item[/* id */0]
-            }, item[/* caption */1], " ", actionsAsString(item));
+  return React.createElement("div", undefined, item[/* caption */1], " ", actionsAsString(item));
 }
 
 var make = ListItemComponent;

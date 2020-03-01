@@ -89,7 +89,8 @@ function MainComponent(Props) {
   var match$1 = state[/* loading */1];
   return React.createElement(React.Fragment, undefined, React.createElement("h3", undefined, "ReasonML demo exchange rate application"), React.createElement("div", undefined, Belt_List.toArray(Belt_List.map(state[/* currencyInfo */0], (function (i) {
                             return React.createElement(ListItemComponent$ReactHooksTemplate.make, {
-                                        item: convertInAppCurrencyToListItem(i)
+                                        item: convertInAppCurrencyToListItem(i),
+                                        key: i[/* currencyCode */0]
                                       });
                           }))), React.createElement("hr", undefined), match$1 ? React.createElement("div", undefined, "Loading...") : React.createElement("div", undefined, "Data loaded !")));
 }

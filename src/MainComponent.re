@@ -81,7 +81,7 @@ let make = () => {
       {React.array(
          List.toArray(
            List.map(state.currencyInfo, (i: currencyExchangeRatePoint) =>
-             <ListItemComponent item={convertInAppCurrencyToListItem(i)} />
+             <ListItemComponent key={i.currencyCode} item={convertInAppCurrencyToListItem(i)} />
            ),
          ),
        )}

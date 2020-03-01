@@ -9,7 +9,7 @@ let actionsAsString = (~item: listItem) => List.reduce(
 [@react.component]
 let make = (~item: listItem) => {
   
-  <div key={item.id}>
+  <div>
     {ReasonReact.string(item.caption)}
     {ReasonReact.string(" ")}
     {ReasonReact.string(actionsAsString(item))}

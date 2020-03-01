@@ -196,7 +196,11 @@ function MainComponent(Props) {
                                           }),
                                         key: i[/* currencyCode */0]
                                       });
-                          }))), React.createElement("hr", undefined), match$1 ? React.createElement("div", undefined, "Incative") : React.createElement("div", undefined, "Loading...")));
+                          }))), React.createElement("button", {
+                      onClick: (function (param) {
+                          return Curry._1(dispatch, /* StartLoadingAllSelectedCurrencies */0);
+                        })
+                    }, "Refresh all rates"), React.createElement("hr", undefined), match$1 ? React.createElement("div", undefined, "Incative") : React.createElement("div", undefined, "Loading...")));
 }
 
 var make = MainComponent;

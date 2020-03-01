@@ -59,10 +59,16 @@ var Dto = {
 
 function fetchCurrency(currencyCode) {
   return fetch(url(currencyCode)).then((function (prim) {
-                  return prim.json();
-                })).then((function (json) {
-                var transformed = exchangeRateDecoder(json);
-                return Promise.resolve(jsonToCurrencyExchangeModel(transformed));
+                    return prim.json();
+                  })).then((function (json) {
+                  var transformed = exchangeRateDecoder(json);
+                  return Promise.resolve(jsonToCurrencyExchangeModel(transformed));
+                })).catch((function (param) {
+                console.log("error");
+                return Promise.resolve(/* record */[
+                            /* currencyCode */currencyCode,
+                            /* point */undefined
+                          ]);
               }));
 }
 
@@ -75,8 +81,8 @@ function fetchCurrencies(currencyCodes, callback) {
             Curry._1(callback, Belt_List.fromArray(response));
             return Promise.resolve(/* () */0);
           })).catch((function (param) {
-          console.log("error");
-          return Promise.resolve(Curry._1(callback, /* [] */0));
+          console.log("error global");
+          return Promise.resolve(/* () */0);
         }));
   return /* () */0;
 }

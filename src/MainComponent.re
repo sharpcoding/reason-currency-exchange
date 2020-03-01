@@ -164,7 +164,7 @@ let make = () => {
         |> ignore;
         None;
       | _ => None
-      },
+    },
     List.toArray([state.httpOperation]),
   );
 
@@ -198,6 +198,9 @@ let make = () => {
            ),
          ),
        )}
+      <button onClick={_ => dispatch(StartLoadingAllSelectedCurrencies)}>
+        {ReasonReact.string("Refresh all rates")}
+      </button>
       <hr />
       {state.httpOperation == None
          ? <div> {React.string("Incative")} </div>

@@ -63,6 +63,10 @@ module InternalHttpOps = {
              }
            )
          )
+      |> catch(_ => {
+           Js.log("error");
+           resolve({currencyCode, point: None});
+         })
     );
   };
 };
@@ -78,10 +82,10 @@ let fetchCurrencies = (currencyCodes: list(string), callback) => {
          callback(List.fromArray(response));
          resolve();
        })
-    |> catch((_) => {
-      Js.log("error");
-      resolve(callback([]));
-    })
+    |> catch(_ => {
+         Js.log("error global");
+         resolve();
+       })
     |> ignore
   );
 };

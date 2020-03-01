@@ -4,20 +4,20 @@ open AppSettings;
 
 let url = currencyCode => {j|$nbpApiBaseUrl/$currencyCode/|j};
 
-type jsonExchangeRateItem = {
-  no: string,
-  effectiveDate: string,
-  mid: float,
-};
+module JsonOps = {
+  type jsonExchangeRateItem = {
+    no: string,
+    effectiveDate: string,
+    mid: float,
+  };
 
-type jsonExchangeRateResponse = {
-  table: string,
-  currency: string,
-  code: string,
-  rates: array(jsonExchangeRateItem),
-};
+  type jsonExchangeRateResponse = {
+    table: string,
+    currency: string,
+    code: string,
+    rates: array(jsonExchangeRateItem),
+  };
 
-module JsonDecode = {
   let exchangeRateItemDecoder = (json): jsonExchangeRateItem => {
     Json.Decode.{
       no: json |> field("no", string),
@@ -38,53 +38,50 @@ module JsonDecode = {
 
 module Dto = {
   let jsonToCurrencyExchangeModel =
-      (json: jsonExchangeRateResponse): currencyExchangeRatePoint => {
+      (json: JsonOps.jsonExchangeRateResponse): currencyExchangeRatePoint => {
     switch (List.fromArray(json.rates)) {
-    | [] => {
+    | [] => {currencyCode: json.code, point: None}
+    | [head, ..._] => {
         currencyCode: json.code,
-        point: None
-    }
-    | [head, ..._] =>
-      {
-        currencyCode: json.code,
-        point: Some({
-          rate: head.mid,
-          date: head.effectiveDate,
-        })
+        point: Some({rate: head.mid, date: head.effectiveDate}),
       }
     };
   };
 };
 
-let fetchCurrency = (currencyCode) => {
-  Js.Promise.(
-    Fetch.fetch(url(currencyCode))
-    |> then_(Fetch.Response.json)
-    |> then_(json =>
-         json
-         |> JsonDecode.exchangeRateDecoder
-         |> (
-           transformed => {
-             resolve(Dto.jsonToCurrencyExchangeModel(transformed));
-           }
+module InternalHttpOps = {
+  let fetchCurrency = currencyCode => {
+    Js.Promise.(
+      Fetch.fetch(url(currencyCode))
+      |> then_(Fetch.Response.json)
+      |> then_(json =>
+           json
+           |> JsonOps.exchangeRateDecoder
+           |> (
+             transformed => {
+               resolve(Dto.jsonToCurrencyExchangeModel(transformed));
+             }
+           )
          )
-       )
-  );
+    );
+  };
 };
 
 let fetchCurrencies = (currencyCodes: list(string), callback) => {
   Js.Promise.(
     Js.Promise.all(
       List.toArray(
-        List.map(currencyCodes, 
-          code => fetchCurrency(code)
-        )
-      )
+        List.map(currencyCodes, code => InternalHttpOps.fetchCurrency(code)),
+      ),
     )
     |> then_(response => {
-      callback(List.fromArray(response));
-      resolve();
+         callback(List.fromArray(response));
+         resolve();
+       })
+    |> catch((_) => {
+      Js.log("error");
+      resolve(callback([]));
     })
     |> ignore
   );
-}
+};

@@ -1,6 +1,10 @@
 type currencyPopularity =
   | Top
   | Popular
+  /**
+   * Currency popular in Poland because it is a neighbour country's currency 
+   * or a currency in a popular turist destination
+   */
   | LocallyPopular
   | Exotic;
 
@@ -13,7 +17,6 @@ type isoCurrencyDescription = {
 let isoCurrencies: list(isoCurrencyDescription) = [
   {currencyCode: "AED", popularity: Exotic,         currencyDescription: "United Arab Emirates dirham"},
   {currencyCode: "AFN", popularity: Exotic,         currencyDescription: "Afghani"},
-  {currencyCode: "ALL", popularity: LocallyPopular, currencyDescription: "Lek"},
   {currencyCode: "AMD", popularity: Exotic,         currencyDescription: "Armenian Dram"},
   {currencyCode: "ANG", popularity: Exotic,         currencyDescription: "Netherlands Antillian Guilder"},
   {currencyCode: "AOA", popularity: Exotic,         currencyDescription: "Kwanza"},
@@ -49,9 +52,9 @@ let isoCurrencies: list(isoCurrencyDescription) = [
   {currencyCode: "CUP", popularity: Exotic,         currencyDescription: "Cuban Peso"},
   {currencyCode: "CVE", popularity: Exotic,         currencyDescription: "Cape Verde Escudo"},
   {currencyCode: "CYP", popularity: LocallyPopular, currencyDescription: "Cyprus Pound"},
-  {currencyCode: "CZK", popularity: Top,            currencyDescription: "Czech Koruna"},
+  {currencyCode: "CZK", popularity: LocallyPopular, currencyDescription: "Czech Koruna"},
   {currencyCode: "DJF", popularity: Exotic,         currencyDescription: "Djibouti Franc"},
-  {currencyCode: "DKK", popularity: Top,            currencyDescription: "Danish Krone"},
+  {currencyCode: "DKK", popularity: LocallyPopular, currencyDescription: "Danish Krone"},
   {currencyCode: "DOP", popularity: Exotic,         currencyDescription: "Dominican Peso"},
   {currencyCode: "DZD", popularity: Exotic,         currencyDescription: "Algerian Dinar"},
   {currencyCode: "EEK", popularity: Exotic,         currencyDescription: "Kroon"},
@@ -73,7 +76,7 @@ let isoCurrencies: list(isoCurrencyDescription) = [
   {currencyCode: "HNL", popularity: Exotic,         currencyDescription: "Lempira"},
   {currencyCode: "HRK", popularity: LocallyPopular, currencyDescription: "Croatian Kuna"},
   {currencyCode: "HTG", popularity: Exotic,         currencyDescription: "Haiti Gourde"},
-  {currencyCode: "HUF", popularity: Exotic,         currencyDescription: "Forint"},
+  {currencyCode: "HUF", popularity: LocallyPopular, currencyDescription: "Forint"},
   {currencyCode: "IDR", popularity: Exotic,         currencyDescription: "Rupiah"},
   {currencyCode: "ILS", popularity: Exotic,         currencyDescription: "New Israeli Shekel"},
   {currencyCode: "INR", popularity: Exotic,         currencyDescription: "Indian Rupee"},
@@ -119,7 +122,7 @@ let isoCurrencies: list(isoCurrencyDescription) = [
   {currencyCode: "NAD", popularity: Exotic,         currencyDescription: "Namibian Dollar"},
   {currencyCode: "NGN", popularity: Exotic,         currencyDescription: "Naira"},
   {currencyCode: "NIO", popularity: Exotic,         currencyDescription: "Cordoba Oro"},
-  {currencyCode: "NOK", popularity: Top,            currencyDescription: "Norwegian Krone"},
+  {currencyCode: "NOK", popularity: Popular,        currencyDescription: "Norwegian Krone"},
   {currencyCode: "NPR", popularity: Exotic,         currencyDescription: "Nepalese Rupee"},
   {currencyCode: "NZD", popularity: Popular,        currencyDescription: "New Zealand Dollar"},
   {currencyCode: "OMR", popularity: Exotic,         currencyDescription: "Rial Omani"},
@@ -138,7 +141,7 @@ let isoCurrencies: list(isoCurrencyDescription) = [
   {currencyCode: "SBD", popularity: Exotic,         currencyDescription: "Solomon Islands Dollar"},
   {currencyCode: "SCR", popularity: Exotic,         currencyDescription: "Seychelles Rupee"},
   {currencyCode: "SDG", popularity: Exotic,         currencyDescription: "Sudanese Pound"},
-  {currencyCode: "SEK", popularity: Popular,        currencyDescription: "Swedish Krona"},
+  {currencyCode: "SEK", popularity: LocallyPopular, currencyDescription: "Swedish Krona"},
   {currencyCode: "SGD", popularity: Exotic,         currencyDescription: "Singapore Dollar"},
   {currencyCode: "SHP", popularity: Exotic,         currencyDescription: "Saint Helena Pound"},
   {currencyCode: "SKK", popularity: LocallyPopular, currencyDescription: "Slovak Koruna"},

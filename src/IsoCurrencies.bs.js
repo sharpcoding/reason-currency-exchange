@@ -16,894 +16,887 @@ var isoCurrencies = /* :: */[
     ],
     /* :: */[
       /* record */[
-        /* currencyCode */"ALL",
-        /* currencyDescription */"Lek",
-        /* popularity : LocallyPopular */2
+        /* currencyCode */"AMD",
+        /* currencyDescription */"Armenian Dram",
+        /* popularity : Exotic */3
       ],
       /* :: */[
         /* record */[
-          /* currencyCode */"AMD",
-          /* currencyDescription */"Armenian Dram",
+          /* currencyCode */"ANG",
+          /* currencyDescription */"Netherlands Antillian Guilder",
           /* popularity : Exotic */3
         ],
         /* :: */[
           /* record */[
-            /* currencyCode */"ANG",
-            /* currencyDescription */"Netherlands Antillian Guilder",
+            /* currencyCode */"AOA",
+            /* currencyDescription */"Kwanza",
             /* popularity : Exotic */3
           ],
           /* :: */[
             /* record */[
-              /* currencyCode */"AOA",
-              /* currencyDescription */"Kwanza",
+              /* currencyCode */"ARS",
+              /* currencyDescription */"Argentine Peso",
               /* popularity : Exotic */3
             ],
             /* :: */[
               /* record */[
-                /* currencyCode */"ARS",
-                /* currencyDescription */"Argentine Peso",
-                /* popularity : Exotic */3
+                /* currencyCode */"AUD",
+                /* currencyDescription */"Australian Dollar",
+                /* popularity : Popular */1
               ],
               /* :: */[
                 /* record */[
-                  /* currencyCode */"AUD",
-                  /* currencyDescription */"Australian Dollar",
-                  /* popularity : Popular */1
+                  /* currencyCode */"AWG",
+                  /* currencyDescription */"Aruban Guilder",
+                  /* popularity : Exotic */3
                 ],
                 /* :: */[
                   /* record */[
-                    /* currencyCode */"AWG",
-                    /* currencyDescription */"Aruban Guilder",
+                    /* currencyCode */"AZN",
+                    /* currencyDescription */"Azerbaijanian Manat",
                     /* popularity : Exotic */3
                   ],
                   /* :: */[
                     /* record */[
-                      /* currencyCode */"AZN",
-                      /* currencyDescription */"Azerbaijanian Manat",
+                      /* currencyCode */"BAM",
+                      /* currencyDescription */"Convertible Marks",
                       /* popularity : Exotic */3
                     ],
                     /* :: */[
                       /* record */[
-                        /* currencyCode */"BAM",
-                        /* currencyDescription */"Convertible Marks",
+                        /* currencyCode */"BBD",
+                        /* currencyDescription */"Barbados Dollar",
                         /* popularity : Exotic */3
                       ],
                       /* :: */[
                         /* record */[
-                          /* currencyCode */"BBD",
-                          /* currencyDescription */"Barbados Dollar",
+                          /* currencyCode */"BDT",
+                          /* currencyDescription */"Bangladeshi Taka",
                           /* popularity : Exotic */3
                         ],
                         /* :: */[
                           /* record */[
-                            /* currencyCode */"BDT",
-                            /* currencyDescription */"Bangladeshi Taka",
-                            /* popularity : Exotic */3
+                            /* currencyCode */"BGN",
+                            /* currencyDescription */"Bulgarian Lev",
+                            /* popularity : Popular */1
                           ],
                           /* :: */[
                             /* record */[
-                              /* currencyCode */"BGN",
-                              /* currencyDescription */"Bulgarian Lev",
-                              /* popularity : Popular */1
+                              /* currencyCode */"BHD",
+                              /* currencyDescription */"Bahraini Dinar",
+                              /* popularity : Exotic */3
                             ],
                             /* :: */[
                               /* record */[
-                                /* currencyCode */"BHD",
-                                /* currencyDescription */"Bahraini Dinar",
+                                /* currencyCode */"BIF",
+                                /* currencyDescription */"Burundian Franc",
                                 /* popularity : Exotic */3
                               ],
                               /* :: */[
                                 /* record */[
-                                  /* currencyCode */"BIF",
-                                  /* currencyDescription */"Burundian Franc",
+                                  /* currencyCode */"BMD",
+                                  /* currencyDescription */"Bermudian Dollar",
                                   /* popularity : Exotic */3
                                 ],
                                 /* :: */[
                                   /* record */[
-                                    /* currencyCode */"BMD",
-                                    /* currencyDescription */"Bermudian Dollar",
+                                    /* currencyCode */"BND",
+                                    /* currencyDescription */"Brunei Dollar",
                                     /* popularity : Exotic */3
                                   ],
                                   /* :: */[
                                     /* record */[
-                                      /* currencyCode */"BND",
-                                      /* currencyDescription */"Brunei Dollar",
+                                      /* currencyCode */"BOB",
+                                      /* currencyDescription */"Boliviano",
                                       /* popularity : Exotic */3
                                     ],
                                     /* :: */[
                                       /* record */[
-                                        /* currencyCode */"BOB",
-                                        /* currencyDescription */"Boliviano",
+                                        /* currencyCode */"BOV",
+                                        /* currencyDescription */"Bolivian Mvdol",
                                         /* popularity : Exotic */3
                                       ],
                                       /* :: */[
                                         /* record */[
-                                          /* currencyCode */"BOV",
-                                          /* currencyDescription */"Bolivian Mvdol",
+                                          /* currencyCode */"BRL",
+                                          /* currencyDescription */"Brazilian Real",
                                           /* popularity : Exotic */3
                                         ],
                                         /* :: */[
                                           /* record */[
-                                            /* currencyCode */"BRL",
-                                            /* currencyDescription */"Brazilian Real",
+                                            /* currencyCode */"BSD",
+                                            /* currencyDescription */"Bahamian Dollar",
                                             /* popularity : Exotic */3
                                           ],
                                           /* :: */[
                                             /* record */[
-                                              /* currencyCode */"BSD",
-                                              /* currencyDescription */"Bahamian Dollar",
+                                              /* currencyCode */"BTN",
+                                              /* currencyDescription */"Ngultrum",
                                               /* popularity : Exotic */3
                                             ],
                                             /* :: */[
                                               /* record */[
-                                                /* currencyCode */"BTN",
-                                                /* currencyDescription */"Ngultrum",
+                                                /* currencyCode */"BWP",
+                                                /* currencyDescription */"Pula",
                                                 /* popularity : Exotic */3
                                               ],
                                               /* :: */[
                                                 /* record */[
-                                                  /* currencyCode */"BWP",
-                                                  /* currencyDescription */"Pula",
-                                                  /* popularity : Exotic */3
+                                                  /* currencyCode */"BYR",
+                                                  /* currencyDescription */"Belarussian Ruble",
+                                                  /* popularity : LocallyPopular */2
                                                 ],
                                                 /* :: */[
                                                   /* record */[
-                                                    /* currencyCode */"BYR",
-                                                    /* currencyDescription */"Belarussian Ruble",
-                                                    /* popularity : LocallyPopular */2
+                                                    /* currencyCode */"BZD",
+                                                    /* currencyDescription */"Belize Dollar",
+                                                    /* popularity : Exotic */3
                                                   ],
                                                   /* :: */[
                                                     /* record */[
-                                                      /* currencyCode */"BZD",
-                                                      /* currencyDescription */"Belize Dollar",
-                                                      /* popularity : Exotic */3
+                                                      /* currencyCode */"CAD",
+                                                      /* currencyDescription */"Canadian Dollar",
+                                                      /* popularity : Popular */1
                                                     ],
                                                     /* :: */[
                                                       /* record */[
-                                                        /* currencyCode */"CAD",
-                                                        /* currencyDescription */"Canadian Dollar",
-                                                        /* popularity : Popular */1
+                                                        /* currencyCode */"CDF",
+                                                        /* currencyDescription */"Franc Congolais",
+                                                        /* popularity : Exotic */3
                                                       ],
                                                       /* :: */[
                                                         /* record */[
-                                                          /* currencyCode */"CDF",
-                                                          /* currencyDescription */"Franc Congolais",
-                                                          /* popularity : Exotic */3
+                                                          /* currencyCode */"CHF",
+                                                          /* currencyDescription */"Swiss Franc",
+                                                          /* popularity : Top */0
                                                         ],
                                                         /* :: */[
                                                           /* record */[
-                                                            /* currencyCode */"CHF",
-                                                            /* currencyDescription */"Swiss Franc",
-                                                            /* popularity : Top */0
+                                                            /* currencyCode */"CLF",
+                                                            /* currencyDescription */"Unidades de formento",
+                                                            /* popularity : Exotic */3
                                                           ],
                                                           /* :: */[
                                                             /* record */[
-                                                              /* currencyCode */"CLF",
-                                                              /* currencyDescription */"Unidades de formento",
+                                                              /* currencyCode */"CLP",
+                                                              /* currencyDescription */"Chilean Peso",
                                                               /* popularity : Exotic */3
                                                             ],
                                                             /* :: */[
                                                               /* record */[
-                                                                /* currencyCode */"CLP",
-                                                                /* currencyDescription */"Chilean Peso",
+                                                                /* currencyCode */"CNY",
+                                                                /* currencyDescription */"Yuan Renminbi",
                                                                 /* popularity : Exotic */3
                                                               ],
                                                               /* :: */[
                                                                 /* record */[
-                                                                  /* currencyCode */"CNY",
-                                                                  /* currencyDescription */"Yuan Renminbi",
+                                                                  /* currencyCode */"COP",
+                                                                  /* currencyDescription */"Colombian Peso",
                                                                   /* popularity : Exotic */3
                                                                 ],
                                                                 /* :: */[
                                                                   /* record */[
-                                                                    /* currencyCode */"COP",
-                                                                    /* currencyDescription */"Colombian Peso",
+                                                                    /* currencyCode */"COU",
+                                                                    /* currencyDescription */"Unidad de Valor Real",
                                                                     /* popularity : Exotic */3
                                                                   ],
                                                                   /* :: */[
                                                                     /* record */[
-                                                                      /* currencyCode */"COU",
-                                                                      /* currencyDescription */"Unidad de Valor Real",
+                                                                      /* currencyCode */"CRC",
+                                                                      /* currencyDescription */"Costa Rican Colon",
                                                                       /* popularity : Exotic */3
                                                                     ],
                                                                     /* :: */[
                                                                       /* record */[
-                                                                        /* currencyCode */"CRC",
-                                                                        /* currencyDescription */"Costa Rican Colon",
+                                                                        /* currencyCode */"CUP",
+                                                                        /* currencyDescription */"Cuban Peso",
                                                                         /* popularity : Exotic */3
                                                                       ],
                                                                       /* :: */[
                                                                         /* record */[
-                                                                          /* currencyCode */"CUP",
-                                                                          /* currencyDescription */"Cuban Peso",
+                                                                          /* currencyCode */"CVE",
+                                                                          /* currencyDescription */"Cape Verde Escudo",
                                                                           /* popularity : Exotic */3
                                                                         ],
                                                                         /* :: */[
                                                                           /* record */[
-                                                                            /* currencyCode */"CVE",
-                                                                            /* currencyDescription */"Cape Verde Escudo",
-                                                                            /* popularity : Exotic */3
+                                                                            /* currencyCode */"CYP",
+                                                                            /* currencyDescription */"Cyprus Pound",
+                                                                            /* popularity : LocallyPopular */2
                                                                           ],
                                                                           /* :: */[
                                                                             /* record */[
-                                                                              /* currencyCode */"CYP",
-                                                                              /* currencyDescription */"Cyprus Pound",
+                                                                              /* currencyCode */"CZK",
+                                                                              /* currencyDescription */"Czech Koruna",
                                                                               /* popularity : LocallyPopular */2
                                                                             ],
                                                                             /* :: */[
                                                                               /* record */[
-                                                                                /* currencyCode */"CZK",
-                                                                                /* currencyDescription */"Czech Koruna",
-                                                                                /* popularity : Top */0
+                                                                                /* currencyCode */"DJF",
+                                                                                /* currencyDescription */"Djibouti Franc",
+                                                                                /* popularity : Exotic */3
                                                                               ],
                                                                               /* :: */[
                                                                                 /* record */[
-                                                                                  /* currencyCode */"DJF",
-                                                                                  /* currencyDescription */"Djibouti Franc",
-                                                                                  /* popularity : Exotic */3
+                                                                                  /* currencyCode */"DKK",
+                                                                                  /* currencyDescription */"Danish Krone",
+                                                                                  /* popularity : LocallyPopular */2
                                                                                 ],
                                                                                 /* :: */[
                                                                                   /* record */[
-                                                                                    /* currencyCode */"DKK",
-                                                                                    /* currencyDescription */"Danish Krone",
-                                                                                    /* popularity : Top */0
+                                                                                    /* currencyCode */"DOP",
+                                                                                    /* currencyDescription */"Dominican Peso",
+                                                                                    /* popularity : Exotic */3
                                                                                   ],
                                                                                   /* :: */[
                                                                                     /* record */[
-                                                                                      /* currencyCode */"DOP",
-                                                                                      /* currencyDescription */"Dominican Peso",
+                                                                                      /* currencyCode */"DZD",
+                                                                                      /* currencyDescription */"Algerian Dinar",
                                                                                       /* popularity : Exotic */3
                                                                                     ],
                                                                                     /* :: */[
                                                                                       /* record */[
-                                                                                        /* currencyCode */"DZD",
-                                                                                        /* currencyDescription */"Algerian Dinar",
+                                                                                        /* currencyCode */"EEK",
+                                                                                        /* currencyDescription */"Kroon",
                                                                                         /* popularity : Exotic */3
                                                                                       ],
                                                                                       /* :: */[
                                                                                         /* record */[
-                                                                                          /* currencyCode */"EEK",
-                                                                                          /* currencyDescription */"Kroon",
+                                                                                          /* currencyCode */"EGP",
+                                                                                          /* currencyDescription */"Egyptian Pound",
                                                                                           /* popularity : Exotic */3
                                                                                         ],
                                                                                         /* :: */[
                                                                                           /* record */[
-                                                                                            /* currencyCode */"EGP",
-                                                                                            /* currencyDescription */"Egyptian Pound",
+                                                                                            /* currencyCode */"ERN",
+                                                                                            /* currencyDescription */"Nakfa",
                                                                                             /* popularity : Exotic */3
                                                                                           ],
                                                                                           /* :: */[
                                                                                             /* record */[
-                                                                                              /* currencyCode */"ERN",
-                                                                                              /* currencyDescription */"Nakfa",
+                                                                                              /* currencyCode */"ETB",
+                                                                                              /* currencyDescription */"Ethiopian Birr",
                                                                                               /* popularity : Exotic */3
                                                                                             ],
                                                                                             /* :: */[
                                                                                               /* record */[
-                                                                                                /* currencyCode */"ETB",
-                                                                                                /* currencyDescription */"Ethiopian Birr",
-                                                                                                /* popularity : Exotic */3
+                                                                                                /* currencyCode */"EUR",
+                                                                                                /* currencyDescription */"Euro",
+                                                                                                /* popularity : Top */0
                                                                                               ],
                                                                                               /* :: */[
                                                                                                 /* record */[
-                                                                                                  /* currencyCode */"EUR",
-                                                                                                  /* currencyDescription */"Euro",
-                                                                                                  /* popularity : Top */0
+                                                                                                  /* currencyCode */"FJD",
+                                                                                                  /* currencyDescription */"Fiji Dollar",
+                                                                                                  /* popularity : Exotic */3
                                                                                                 ],
                                                                                                 /* :: */[
                                                                                                   /* record */[
-                                                                                                    /* currencyCode */"FJD",
-                                                                                                    /* currencyDescription */"Fiji Dollar",
+                                                                                                    /* currencyCode */"FKP",
+                                                                                                    /* currencyDescription */"Falkland Islands Pound",
                                                                                                     /* popularity : Exotic */3
                                                                                                   ],
                                                                                                   /* :: */[
                                                                                                     /* record */[
-                                                                                                      /* currencyCode */"FKP",
-                                                                                                      /* currencyDescription */"Falkland Islands Pound",
-                                                                                                      /* popularity : Exotic */3
+                                                                                                      /* currencyCode */"GBP",
+                                                                                                      /* currencyDescription */"Pound Sterling",
+                                                                                                      /* popularity : Top */0
                                                                                                     ],
                                                                                                     /* :: */[
                                                                                                       /* record */[
-                                                                                                        /* currencyCode */"GBP",
-                                                                                                        /* currencyDescription */"Pound Sterling",
-                                                                                                        /* popularity : Top */0
+                                                                                                        /* currencyCode */"GEL",
+                                                                                                        /* currencyDescription */"Lari",
+                                                                                                        /* popularity : Exotic */3
                                                                                                       ],
                                                                                                       /* :: */[
                                                                                                         /* record */[
-                                                                                                          /* currencyCode */"GEL",
-                                                                                                          /* currencyDescription */"Lari",
+                                                                                                          /* currencyCode */"GHS",
+                                                                                                          /* currencyDescription */"Cedi",
                                                                                                           /* popularity : Exotic */3
                                                                                                         ],
                                                                                                         /* :: */[
                                                                                                           /* record */[
-                                                                                                            /* currencyCode */"GHS",
-                                                                                                            /* currencyDescription */"Cedi",
+                                                                                                            /* currencyCode */"GIP",
+                                                                                                            /* currencyDescription */"Gibraltar pound",
                                                                                                             /* popularity : Exotic */3
                                                                                                           ],
                                                                                                           /* :: */[
                                                                                                             /* record */[
-                                                                                                              /* currencyCode */"GIP",
-                                                                                                              /* currencyDescription */"Gibraltar pound",
+                                                                                                              /* currencyCode */"GMD",
+                                                                                                              /* currencyDescription */"Dalasi",
                                                                                                               /* popularity : Exotic */3
                                                                                                             ],
                                                                                                             /* :: */[
                                                                                                               /* record */[
-                                                                                                                /* currencyCode */"GMD",
-                                                                                                                /* currencyDescription */"Dalasi",
+                                                                                                                /* currencyCode */"GNF",
+                                                                                                                /* currencyDescription */"Guinea Franc",
                                                                                                                 /* popularity : Exotic */3
                                                                                                               ],
                                                                                                               /* :: */[
                                                                                                                 /* record */[
-                                                                                                                  /* currencyCode */"GNF",
-                                                                                                                  /* currencyDescription */"Guinea Franc",
+                                                                                                                  /* currencyCode */"GTQ",
+                                                                                                                  /* currencyDescription */"Quetzal",
                                                                                                                   /* popularity : Exotic */3
                                                                                                                 ],
                                                                                                                 /* :: */[
                                                                                                                   /* record */[
-                                                                                                                    /* currencyCode */"GTQ",
-                                                                                                                    /* currencyDescription */"Quetzal",
+                                                                                                                    /* currencyCode */"GYD",
+                                                                                                                    /* currencyDescription */"Guyana Dollar",
                                                                                                                     /* popularity : Exotic */3
                                                                                                                   ],
                                                                                                                   /* :: */[
                                                                                                                     /* record */[
-                                                                                                                      /* currencyCode */"GYD",
-                                                                                                                      /* currencyDescription */"Guyana Dollar",
+                                                                                                                      /* currencyCode */"HKD",
+                                                                                                                      /* currencyDescription */"Hong Kong Dollar",
                                                                                                                       /* popularity : Exotic */3
                                                                                                                     ],
                                                                                                                     /* :: */[
                                                                                                                       /* record */[
-                                                                                                                        /* currencyCode */"HKD",
-                                                                                                                        /* currencyDescription */"Hong Kong Dollar",
+                                                                                                                        /* currencyCode */"HNL",
+                                                                                                                        /* currencyDescription */"Lempira",
                                                                                                                         /* popularity : Exotic */3
                                                                                                                       ],
                                                                                                                       /* :: */[
                                                                                                                         /* record */[
-                                                                                                                          /* currencyCode */"HNL",
-                                                                                                                          /* currencyDescription */"Lempira",
-                                                                                                                          /* popularity : Exotic */3
+                                                                                                                          /* currencyCode */"HRK",
+                                                                                                                          /* currencyDescription */"Croatian Kuna",
+                                                                                                                          /* popularity : LocallyPopular */2
                                                                                                                         ],
                                                                                                                         /* :: */[
                                                                                                                           /* record */[
-                                                                                                                            /* currencyCode */"HRK",
-                                                                                                                            /* currencyDescription */"Croatian Kuna",
-                                                                                                                            /* popularity : LocallyPopular */2
+                                                                                                                            /* currencyCode */"HTG",
+                                                                                                                            /* currencyDescription */"Haiti Gourde",
+                                                                                                                            /* popularity : Exotic */3
                                                                                                                           ],
                                                                                                                           /* :: */[
                                                                                                                             /* record */[
-                                                                                                                              /* currencyCode */"HTG",
-                                                                                                                              /* currencyDescription */"Haiti Gourde",
-                                                                                                                              /* popularity : Exotic */3
+                                                                                                                              /* currencyCode */"HUF",
+                                                                                                                              /* currencyDescription */"Forint",
+                                                                                                                              /* popularity : LocallyPopular */2
                                                                                                                             ],
                                                                                                                             /* :: */[
                                                                                                                               /* record */[
-                                                                                                                                /* currencyCode */"HUF",
-                                                                                                                                /* currencyDescription */"Forint",
+                                                                                                                                /* currencyCode */"IDR",
+                                                                                                                                /* currencyDescription */"Rupiah",
                                                                                                                                 /* popularity : Exotic */3
                                                                                                                               ],
                                                                                                                               /* :: */[
                                                                                                                                 /* record */[
-                                                                                                                                  /* currencyCode */"IDR",
-                                                                                                                                  /* currencyDescription */"Rupiah",
+                                                                                                                                  /* currencyCode */"ILS",
+                                                                                                                                  /* currencyDescription */"New Israeli Shekel",
                                                                                                                                   /* popularity : Exotic */3
                                                                                                                                 ],
                                                                                                                                 /* :: */[
                                                                                                                                   /* record */[
-                                                                                                                                    /* currencyCode */"ILS",
-                                                                                                                                    /* currencyDescription */"New Israeli Shekel",
+                                                                                                                                    /* currencyCode */"INR",
+                                                                                                                                    /* currencyDescription */"Indian Rupee",
                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                   ],
                                                                                                                                   /* :: */[
                                                                                                                                     /* record */[
-                                                                                                                                      /* currencyCode */"INR",
-                                                                                                                                      /* currencyDescription */"Indian Rupee",
+                                                                                                                                      /* currencyCode */"IQD",
+                                                                                                                                      /* currencyDescription */"Iraqi Dinar",
                                                                                                                                       /* popularity : Exotic */3
                                                                                                                                     ],
                                                                                                                                     /* :: */[
                                                                                                                                       /* record */[
-                                                                                                                                        /* currencyCode */"IQD",
-                                                                                                                                        /* currencyDescription */"Iraqi Dinar",
+                                                                                                                                        /* currencyCode */"IRR",
+                                                                                                                                        /* currencyDescription */"Iranian Rial",
                                                                                                                                         /* popularity : Exotic */3
                                                                                                                                       ],
                                                                                                                                       /* :: */[
                                                                                                                                         /* record */[
-                                                                                                                                          /* currencyCode */"IRR",
-                                                                                                                                          /* currencyDescription */"Iranian Rial",
-                                                                                                                                          /* popularity : Exotic */3
+                                                                                                                                          /* currencyCode */"ISK",
+                                                                                                                                          /* currencyDescription */"Iceland Krona",
+                                                                                                                                          /* popularity : LocallyPopular */2
                                                                                                                                         ],
                                                                                                                                         /* :: */[
                                                                                                                                           /* record */[
-                                                                                                                                            /* currencyCode */"ISK",
-                                                                                                                                            /* currencyDescription */"Iceland Krona",
-                                                                                                                                            /* popularity : LocallyPopular */2
+                                                                                                                                            /* currencyCode */"JMD",
+                                                                                                                                            /* currencyDescription */"Jamaican Dollar",
+                                                                                                                                            /* popularity : Exotic */3
                                                                                                                                           ],
                                                                                                                                           /* :: */[
                                                                                                                                             /* record */[
-                                                                                                                                              /* currencyCode */"JMD",
-                                                                                                                                              /* currencyDescription */"Jamaican Dollar",
+                                                                                                                                              /* currencyCode */"JOD",
+                                                                                                                                              /* currencyDescription */"Jordanian Dinar",
                                                                                                                                               /* popularity : Exotic */3
                                                                                                                                             ],
                                                                                                                                             /* :: */[
                                                                                                                                               /* record */[
-                                                                                                                                                /* currencyCode */"JOD",
-                                                                                                                                                /* currencyDescription */"Jordanian Dinar",
-                                                                                                                                                /* popularity : Exotic */3
+                                                                                                                                                /* currencyCode */"JPY",
+                                                                                                                                                /* currencyDescription */"Japanese yen",
+                                                                                                                                                /* popularity : Top */0
                                                                                                                                               ],
                                                                                                                                               /* :: */[
                                                                                                                                                 /* record */[
-                                                                                                                                                  /* currencyCode */"JPY",
-                                                                                                                                                  /* currencyDescription */"Japanese yen",
-                                                                                                                                                  /* popularity : Top */0
+                                                                                                                                                  /* currencyCode */"KES",
+                                                                                                                                                  /* currencyDescription */"Kenyan Shilling",
+                                                                                                                                                  /* popularity : Exotic */3
                                                                                                                                                 ],
                                                                                                                                                 /* :: */[
                                                                                                                                                   /* record */[
-                                                                                                                                                    /* currencyCode */"KES",
-                                                                                                                                                    /* currencyDescription */"Kenyan Shilling",
+                                                                                                                                                    /* currencyCode */"KGS",
+                                                                                                                                                    /* currencyDescription */"Som",
                                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                                   ],
                                                                                                                                                   /* :: */[
                                                                                                                                                     /* record */[
-                                                                                                                                                      /* currencyCode */"KGS",
-                                                                                                                                                      /* currencyDescription */"Som",
+                                                                                                                                                      /* currencyCode */"KHR",
+                                                                                                                                                      /* currencyDescription */"Riel",
                                                                                                                                                       /* popularity : Exotic */3
                                                                                                                                                     ],
                                                                                                                                                     /* :: */[
                                                                                                                                                       /* record */[
-                                                                                                                                                        /* currencyCode */"KHR",
-                                                                                                                                                        /* currencyDescription */"Riel",
+                                                                                                                                                        /* currencyCode */"KMF",
+                                                                                                                                                        /* currencyDescription */"Comoro Franc",
                                                                                                                                                         /* popularity : Exotic */3
                                                                                                                                                       ],
                                                                                                                                                       /* :: */[
                                                                                                                                                         /* record */[
-                                                                                                                                                          /* currencyCode */"KMF",
-                                                                                                                                                          /* currencyDescription */"Comoro Franc",
+                                                                                                                                                          /* currencyCode */"KPW",
+                                                                                                                                                          /* currencyDescription */"North Korean Won",
                                                                                                                                                           /* popularity : Exotic */3
                                                                                                                                                         ],
                                                                                                                                                         /* :: */[
                                                                                                                                                           /* record */[
-                                                                                                                                                            /* currencyCode */"KPW",
-                                                                                                                                                            /* currencyDescription */"North Korean Won",
+                                                                                                                                                            /* currencyCode */"KRW",
+                                                                                                                                                            /* currencyDescription */"South Korean Won",
                                                                                                                                                             /* popularity : Exotic */3
                                                                                                                                                           ],
                                                                                                                                                           /* :: */[
                                                                                                                                                             /* record */[
-                                                                                                                                                              /* currencyCode */"KRW",
-                                                                                                                                                              /* currencyDescription */"South Korean Won",
+                                                                                                                                                              /* currencyCode */"KWD",
+                                                                                                                                                              /* currencyDescription */"Kuwaiti Dinar",
                                                                                                                                                               /* popularity : Exotic */3
                                                                                                                                                             ],
                                                                                                                                                             /* :: */[
                                                                                                                                                               /* record */[
-                                                                                                                                                                /* currencyCode */"KWD",
-                                                                                                                                                                /* currencyDescription */"Kuwaiti Dinar",
+                                                                                                                                                                /* currencyCode */"KYD",
+                                                                                                                                                                /* currencyDescription */"Cayman Islands Dollar",
                                                                                                                                                                 /* popularity : Exotic */3
                                                                                                                                                               ],
                                                                                                                                                               /* :: */[
                                                                                                                                                                 /* record */[
-                                                                                                                                                                  /* currencyCode */"KYD",
-                                                                                                                                                                  /* currencyDescription */"Cayman Islands Dollar",
+                                                                                                                                                                  /* currencyCode */"KZT",
+                                                                                                                                                                  /* currencyDescription */"Tenge",
                                                                                                                                                                   /* popularity : Exotic */3
                                                                                                                                                                 ],
                                                                                                                                                                 /* :: */[
                                                                                                                                                                   /* record */[
-                                                                                                                                                                    /* currencyCode */"KZT",
-                                                                                                                                                                    /* currencyDescription */"Tenge",
+                                                                                                                                                                    /* currencyCode */"LAK",
+                                                                                                                                                                    /* currencyDescription */"Kip",
                                                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                                                   ],
                                                                                                                                                                   /* :: */[
                                                                                                                                                                     /* record */[
-                                                                                                                                                                      /* currencyCode */"LAK",
-                                                                                                                                                                      /* currencyDescription */"Kip",
+                                                                                                                                                                      /* currencyCode */"LBP",
+                                                                                                                                                                      /* currencyDescription */"Lebanese Pound",
                                                                                                                                                                       /* popularity : Exotic */3
                                                                                                                                                                     ],
                                                                                                                                                                     /* :: */[
                                                                                                                                                                       /* record */[
-                                                                                                                                                                        /* currencyCode */"LBP",
-                                                                                                                                                                        /* currencyDescription */"Lebanese Pound",
+                                                                                                                                                                        /* currencyCode */"LKR",
+                                                                                                                                                                        /* currencyDescription */"Sri Lanka Rupee",
                                                                                                                                                                         /* popularity : Exotic */3
                                                                                                                                                                       ],
                                                                                                                                                                       /* :: */[
                                                                                                                                                                         /* record */[
-                                                                                                                                                                          /* currencyCode */"LKR",
-                                                                                                                                                                          /* currencyDescription */"Sri Lanka Rupee",
+                                                                                                                                                                          /* currencyCode */"LRD",
+                                                                                                                                                                          /* currencyDescription */"Liberian Dollar",
                                                                                                                                                                           /* popularity : Exotic */3
                                                                                                                                                                         ],
                                                                                                                                                                         /* :: */[
                                                                                                                                                                           /* record */[
-                                                                                                                                                                            /* currencyCode */"LRD",
-                                                                                                                                                                            /* currencyDescription */"Liberian Dollar",
+                                                                                                                                                                            /* currencyCode */"LSL",
+                                                                                                                                                                            /* currencyDescription */"Loti",
                                                                                                                                                                             /* popularity : Exotic */3
                                                                                                                                                                           ],
                                                                                                                                                                           /* :: */[
                                                                                                                                                                             /* record */[
-                                                                                                                                                                              /* currencyCode */"LSL",
-                                                                                                                                                                              /* currencyDescription */"Loti",
-                                                                                                                                                                              /* popularity : Exotic */3
+                                                                                                                                                                              /* currencyCode */"LTL",
+                                                                                                                                                                              /* currencyDescription */"Lithuanian Litas",
+                                                                                                                                                                              /* popularity : LocallyPopular */2
                                                                                                                                                                             ],
                                                                                                                                                                             /* :: */[
                                                                                                                                                                               /* record */[
-                                                                                                                                                                                /* currencyCode */"LTL",
-                                                                                                                                                                                /* currencyDescription */"Lithuanian Litas",
-                                                                                                                                                                                /* popularity : LocallyPopular */2
+                                                                                                                                                                                /* currencyCode */"LVL",
+                                                                                                                                                                                /* currencyDescription */"Latvian Lats",
+                                                                                                                                                                                /* popularity : Exotic */3
                                                                                                                                                                               ],
                                                                                                                                                                               /* :: */[
                                                                                                                                                                                 /* record */[
-                                                                                                                                                                                  /* currencyCode */"LVL",
-                                                                                                                                                                                  /* currencyDescription */"Latvian Lats",
+                                                                                                                                                                                  /* currencyCode */"LYD",
+                                                                                                                                                                                  /* currencyDescription */"Libyan Dinar",
                                                                                                                                                                                   /* popularity : Exotic */3
                                                                                                                                                                                 ],
                                                                                                                                                                                 /* :: */[
                                                                                                                                                                                   /* record */[
-                                                                                                                                                                                    /* currencyCode */"LYD",
-                                                                                                                                                                                    /* currencyDescription */"Libyan Dinar",
+                                                                                                                                                                                    /* currencyCode */"MAD",
+                                                                                                                                                                                    /* currencyDescription */"Moroccan Dirham",
                                                                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                                                                   ],
                                                                                                                                                                                   /* :: */[
                                                                                                                                                                                     /* record */[
-                                                                                                                                                                                      /* currencyCode */"MAD",
-                                                                                                                                                                                      /* currencyDescription */"Moroccan Dirham",
+                                                                                                                                                                                      /* currencyCode */"MDL",
+                                                                                                                                                                                      /* currencyDescription */"Moldovan Leu",
                                                                                                                                                                                       /* popularity : Exotic */3
                                                                                                                                                                                     ],
                                                                                                                                                                                     /* :: */[
                                                                                                                                                                                       /* record */[
-                                                                                                                                                                                        /* currencyCode */"MDL",
-                                                                                                                                                                                        /* currencyDescription */"Moldovan Leu",
+                                                                                                                                                                                        /* currencyCode */"MGA",
+                                                                                                                                                                                        /* currencyDescription */"Malagasy Ariary",
                                                                                                                                                                                         /* popularity : Exotic */3
                                                                                                                                                                                       ],
                                                                                                                                                                                       /* :: */[
                                                                                                                                                                                         /* record */[
-                                                                                                                                                                                          /* currencyCode */"MGA",
-                                                                                                                                                                                          /* currencyDescription */"Malagasy Ariary",
+                                                                                                                                                                                          /* currencyCode */"MKD",
+                                                                                                                                                                                          /* currencyDescription */"Denar",
                                                                                                                                                                                           /* popularity : Exotic */3
                                                                                                                                                                                         ],
                                                                                                                                                                                         /* :: */[
                                                                                                                                                                                           /* record */[
-                                                                                                                                                                                            /* currencyCode */"MKD",
-                                                                                                                                                                                            /* currencyDescription */"Denar",
+                                                                                                                                                                                            /* currencyCode */"MMK",
+                                                                                                                                                                                            /* currencyDescription */"Kyat",
                                                                                                                                                                                             /* popularity : Exotic */3
                                                                                                                                                                                           ],
                                                                                                                                                                                           /* :: */[
                                                                                                                                                                                             /* record */[
-                                                                                                                                                                                              /* currencyCode */"MMK",
-                                                                                                                                                                                              /* currencyDescription */"Kyat",
+                                                                                                                                                                                              /* currencyCode */"MNT",
+                                                                                                                                                                                              /* currencyDescription */"Tugrik",
                                                                                                                                                                                               /* popularity : Exotic */3
                                                                                                                                                                                             ],
                                                                                                                                                                                             /* :: */[
                                                                                                                                                                                               /* record */[
-                                                                                                                                                                                                /* currencyCode */"MNT",
-                                                                                                                                                                                                /* currencyDescription */"Tugrik",
+                                                                                                                                                                                                /* currencyCode */"MOP",
+                                                                                                                                                                                                /* currencyDescription */"Pataca",
                                                                                                                                                                                                 /* popularity : Exotic */3
                                                                                                                                                                                               ],
                                                                                                                                                                                               /* :: */[
                                                                                                                                                                                                 /* record */[
-                                                                                                                                                                                                  /* currencyCode */"MOP",
-                                                                                                                                                                                                  /* currencyDescription */"Pataca",
+                                                                                                                                                                                                  /* currencyCode */"MRO",
+                                                                                                                                                                                                  /* currencyDescription */"Ouguiya",
                                                                                                                                                                                                   /* popularity : Exotic */3
                                                                                                                                                                                                 ],
                                                                                                                                                                                                 /* :: */[
                                                                                                                                                                                                   /* record */[
-                                                                                                                                                                                                    /* currencyCode */"MRO",
-                                                                                                                                                                                                    /* currencyDescription */"Ouguiya",
+                                                                                                                                                                                                    /* currencyCode */"MTL",
+                                                                                                                                                                                                    /* currencyDescription */"Maltese Lira",
                                                                                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                                                                                   ],
                                                                                                                                                                                                   /* :: */[
                                                                                                                                                                                                     /* record */[
-                                                                                                                                                                                                      /* currencyCode */"MTL",
-                                                                                                                                                                                                      /* currencyDescription */"Maltese Lira",
+                                                                                                                                                                                                      /* currencyCode */"MUR",
+                                                                                                                                                                                                      /* currencyDescription */"Mauritius Rupee",
                                                                                                                                                                                                       /* popularity : Exotic */3
                                                                                                                                                                                                     ],
                                                                                                                                                                                                     /* :: */[
                                                                                                                                                                                                       /* record */[
-                                                                                                                                                                                                        /* currencyCode */"MUR",
-                                                                                                                                                                                                        /* currencyDescription */"Mauritius Rupee",
+                                                                                                                                                                                                        /* currencyCode */"MVR",
+                                                                                                                                                                                                        /* currencyDescription */"Rufiyaa",
                                                                                                                                                                                                         /* popularity : Exotic */3
                                                                                                                                                                                                       ],
                                                                                                                                                                                                       /* :: */[
                                                                                                                                                                                                         /* record */[
-                                                                                                                                                                                                          /* currencyCode */"MVR",
-                                                                                                                                                                                                          /* currencyDescription */"Rufiyaa",
+                                                                                                                                                                                                          /* currencyCode */"MWK",
+                                                                                                                                                                                                          /* currencyDescription */"Kwacha",
                                                                                                                                                                                                           /* popularity : Exotic */3
                                                                                                                                                                                                         ],
                                                                                                                                                                                                         /* :: */[
                                                                                                                                                                                                           /* record */[
-                                                                                                                                                                                                            /* currencyCode */"MWK",
-                                                                                                                                                                                                            /* currencyDescription */"Kwacha",
+                                                                                                                                                                                                            /* currencyCode */"MXN",
+                                                                                                                                                                                                            /* currencyDescription */"Mexican Peso",
                                                                                                                                                                                                             /* popularity : Exotic */3
                                                                                                                                                                                                           ],
                                                                                                                                                                                                           /* :: */[
                                                                                                                                                                                                             /* record */[
-                                                                                                                                                                                                              /* currencyCode */"MXN",
-                                                                                                                                                                                                              /* currencyDescription */"Mexican Peso",
+                                                                                                                                                                                                              /* currencyCode */"MXV",
+                                                                                                                                                                                                              /* currencyDescription */"Mexican Unidad de Inversion (UDI)",
                                                                                                                                                                                                               /* popularity : Exotic */3
                                                                                                                                                                                                             ],
                                                                                                                                                                                                             /* :: */[
                                                                                                                                                                                                               /* record */[
-                                                                                                                                                                                                                /* currencyCode */"MXV",
-                                                                                                                                                                                                                /* currencyDescription */"Mexican Unidad de Inversion (UDI)",
+                                                                                                                                                                                                                /* currencyCode */"MYR",
+                                                                                                                                                                                                                /* currencyDescription */"Malaysian Ringgit",
                                                                                                                                                                                                                 /* popularity : Exotic */3
                                                                                                                                                                                                               ],
                                                                                                                                                                                                               /* :: */[
                                                                                                                                                                                                                 /* record */[
-                                                                                                                                                                                                                  /* currencyCode */"MYR",
-                                                                                                                                                                                                                  /* currencyDescription */"Malaysian Ringgit",
+                                                                                                                                                                                                                  /* currencyCode */"MZN",
+                                                                                                                                                                                                                  /* currencyDescription */"Metical",
                                                                                                                                                                                                                   /* popularity : Exotic */3
                                                                                                                                                                                                                 ],
                                                                                                                                                                                                                 /* :: */[
                                                                                                                                                                                                                   /* record */[
-                                                                                                                                                                                                                    /* currencyCode */"MZN",
-                                                                                                                                                                                                                    /* currencyDescription */"Metical",
+                                                                                                                                                                                                                    /* currencyCode */"NAD",
+                                                                                                                                                                                                                    /* currencyDescription */"Namibian Dollar",
                                                                                                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                                                                                                   ],
                                                                                                                                                                                                                   /* :: */[
                                                                                                                                                                                                                     /* record */[
-                                                                                                                                                                                                                      /* currencyCode */"NAD",
-                                                                                                                                                                                                                      /* currencyDescription */"Namibian Dollar",
+                                                                                                                                                                                                                      /* currencyCode */"NGN",
+                                                                                                                                                                                                                      /* currencyDescription */"Naira",
                                                                                                                                                                                                                       /* popularity : Exotic */3
                                                                                                                                                                                                                     ],
                                                                                                                                                                                                                     /* :: */[
                                                                                                                                                                                                                       /* record */[
-                                                                                                                                                                                                                        /* currencyCode */"NGN",
-                                                                                                                                                                                                                        /* currencyDescription */"Naira",
+                                                                                                                                                                                                                        /* currencyCode */"NIO",
+                                                                                                                                                                                                                        /* currencyDescription */"Cordoba Oro",
                                                                                                                                                                                                                         /* popularity : Exotic */3
                                                                                                                                                                                                                       ],
                                                                                                                                                                                                                       /* :: */[
                                                                                                                                                                                                                         /* record */[
-                                                                                                                                                                                                                          /* currencyCode */"NIO",
-                                                                                                                                                                                                                          /* currencyDescription */"Cordoba Oro",
-                                                                                                                                                                                                                          /* popularity : Exotic */3
+                                                                                                                                                                                                                          /* currencyCode */"NOK",
+                                                                                                                                                                                                                          /* currencyDescription */"Norwegian Krone",
+                                                                                                                                                                                                                          /* popularity : Popular */1
                                                                                                                                                                                                                         ],
                                                                                                                                                                                                                         /* :: */[
                                                                                                                                                                                                                           /* record */[
-                                                                                                                                                                                                                            /* currencyCode */"NOK",
-                                                                                                                                                                                                                            /* currencyDescription */"Norwegian Krone",
-                                                                                                                                                                                                                            /* popularity : Top */0
+                                                                                                                                                                                                                            /* currencyCode */"NPR",
+                                                                                                                                                                                                                            /* currencyDescription */"Nepalese Rupee",
+                                                                                                                                                                                                                            /* popularity : Exotic */3
                                                                                                                                                                                                                           ],
                                                                                                                                                                                                                           /* :: */[
                                                                                                                                                                                                                             /* record */[
-                                                                                                                                                                                                                              /* currencyCode */"NPR",
-                                                                                                                                                                                                                              /* currencyDescription */"Nepalese Rupee",
-                                                                                                                                                                                                                              /* popularity : Exotic */3
+                                                                                                                                                                                                                              /* currencyCode */"NZD",
+                                                                                                                                                                                                                              /* currencyDescription */"New Zealand Dollar",
+                                                                                                                                                                                                                              /* popularity : Popular */1
                                                                                                                                                                                                                             ],
                                                                                                                                                                                                                             /* :: */[
                                                                                                                                                                                                                               /* record */[
-                                                                                                                                                                                                                                /* currencyCode */"NZD",
-                                                                                                                                                                                                                                /* currencyDescription */"New Zealand Dollar",
-                                                                                                                                                                                                                                /* popularity : Popular */1
+                                                                                                                                                                                                                                /* currencyCode */"OMR",
+                                                                                                                                                                                                                                /* currencyDescription */"Rial Omani",
+                                                                                                                                                                                                                                /* popularity : Exotic */3
                                                                                                                                                                                                                               ],
                                                                                                                                                                                                                               /* :: */[
                                                                                                                                                                                                                                 /* record */[
-                                                                                                                                                                                                                                  /* currencyCode */"OMR",
-                                                                                                                                                                                                                                  /* currencyDescription */"Rial Omani",
+                                                                                                                                                                                                                                  /* currencyCode */"PAB",
+                                                                                                                                                                                                                                  /* currencyDescription */"Balboa",
                                                                                                                                                                                                                                   /* popularity : Exotic */3
                                                                                                                                                                                                                                 ],
                                                                                                                                                                                                                                 /* :: */[
                                                                                                                                                                                                                                   /* record */[
-                                                                                                                                                                                                                                    /* currencyCode */"PAB",
-                                                                                                                                                                                                                                    /* currencyDescription */"Balboa",
+                                                                                                                                                                                                                                    /* currencyCode */"PEN",
+                                                                                                                                                                                                                                    /* currencyDescription */"Nuevo Sol",
                                                                                                                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                                                                                                                   ],
                                                                                                                                                                                                                                   /* :: */[
                                                                                                                                                                                                                                     /* record */[
-                                                                                                                                                                                                                                      /* currencyCode */"PEN",
-                                                                                                                                                                                                                                      /* currencyDescription */"Nuevo Sol",
+                                                                                                                                                                                                                                      /* currencyCode */"PGK",
+                                                                                                                                                                                                                                      /* currencyDescription */"Kina",
                                                                                                                                                                                                                                       /* popularity : Exotic */3
                                                                                                                                                                                                                                     ],
                                                                                                                                                                                                                                     /* :: */[
                                                                                                                                                                                                                                       /* record */[
-                                                                                                                                                                                                                                        /* currencyCode */"PGK",
-                                                                                                                                                                                                                                        /* currencyDescription */"Kina",
+                                                                                                                                                                                                                                        /* currencyCode */"PHP",
+                                                                                                                                                                                                                                        /* currencyDescription */"Philippine Peso",
                                                                                                                                                                                                                                         /* popularity : Exotic */3
                                                                                                                                                                                                                                       ],
                                                                                                                                                                                                                                       /* :: */[
                                                                                                                                                                                                                                         /* record */[
-                                                                                                                                                                                                                                          /* currencyCode */"PHP",
-                                                                                                                                                                                                                                          /* currencyDescription */"Philippine Peso",
+                                                                                                                                                                                                                                          /* currencyCode */"PKR",
+                                                                                                                                                                                                                                          /* currencyDescription */"Pakistan Rupee",
                                                                                                                                                                                                                                           /* popularity : Exotic */3
                                                                                                                                                                                                                                         ],
                                                                                                                                                                                                                                         /* :: */[
                                                                                                                                                                                                                                           /* record */[
-                                                                                                                                                                                                                                            /* currencyCode */"PKR",
-                                                                                                                                                                                                                                            /* currencyDescription */"Pakistan Rupee",
+                                                                                                                                                                                                                                            /* currencyCode */"PYG",
+                                                                                                                                                                                                                                            /* currencyDescription */"Guarani",
                                                                                                                                                                                                                                             /* popularity : Exotic */3
                                                                                                                                                                                                                                           ],
                                                                                                                                                                                                                                           /* :: */[
                                                                                                                                                                                                                                             /* record */[
-                                                                                                                                                                                                                                              /* currencyCode */"PYG",
-                                                                                                                                                                                                                                              /* currencyDescription */"Guarani",
+                                                                                                                                                                                                                                              /* currencyCode */"QAR",
+                                                                                                                                                                                                                                              /* currencyDescription */"Qatari Rial",
                                                                                                                                                                                                                                               /* popularity : Exotic */3
                                                                                                                                                                                                                                             ],
                                                                                                                                                                                                                                             /* :: */[
                                                                                                                                                                                                                                               /* record */[
-                                                                                                                                                                                                                                                /* currencyCode */"QAR",
-                                                                                                                                                                                                                                                /* currencyDescription */"Qatari Rial",
-                                                                                                                                                                                                                                                /* popularity : Exotic */3
+                                                                                                                                                                                                                                                /* currencyCode */"RON",
+                                                                                                                                                                                                                                                /* currencyDescription */"Romanian New Leu",
+                                                                                                                                                                                                                                                /* popularity : LocallyPopular */2
                                                                                                                                                                                                                                               ],
                                                                                                                                                                                                                                               /* :: */[
                                                                                                                                                                                                                                                 /* record */[
-                                                                                                                                                                                                                                                  /* currencyCode */"RON",
-                                                                                                                                                                                                                                                  /* currencyDescription */"Romanian New Leu",
+                                                                                                                                                                                                                                                  /* currencyCode */"RSD",
+                                                                                                                                                                                                                                                  /* currencyDescription */"Serbian Dinar",
                                                                                                                                                                                                                                                   /* popularity : LocallyPopular */2
                                                                                                                                                                                                                                                 ],
                                                                                                                                                                                                                                                 /* :: */[
                                                                                                                                                                                                                                                   /* record */[
-                                                                                                                                                                                                                                                    /* currencyCode */"RSD",
-                                                                                                                                                                                                                                                    /* currencyDescription */"Serbian Dinar",
-                                                                                                                                                                                                                                                    /* popularity : LocallyPopular */2
+                                                                                                                                                                                                                                                    /* currencyCode */"RUB",
+                                                                                                                                                                                                                                                    /* currencyDescription */"Russian Ruble",
+                                                                                                                                                                                                                                                    /* popularity : Popular */1
                                                                                                                                                                                                                                                   ],
                                                                                                                                                                                                                                                   /* :: */[
                                                                                                                                                                                                                                                     /* record */[
-                                                                                                                                                                                                                                                      /* currencyCode */"RUB",
-                                                                                                                                                                                                                                                      /* currencyDescription */"Russian Ruble",
-                                                                                                                                                                                                                                                      /* popularity : Popular */1
+                                                                                                                                                                                                                                                      /* currencyCode */"RWF",
+                                                                                                                                                                                                                                                      /* currencyDescription */"Rwanda Franc",
+                                                                                                                                                                                                                                                      /* popularity : Exotic */3
                                                                                                                                                                                                                                                     ],
                                                                                                                                                                                                                                                     /* :: */[
                                                                                                                                                                                                                                                       /* record */[
-                                                                                                                                                                                                                                                        /* currencyCode */"RWF",
-                                                                                                                                                                                                                                                        /* currencyDescription */"Rwanda Franc",
+                                                                                                                                                                                                                                                        /* currencyCode */"SAR",
+                                                                                                                                                                                                                                                        /* currencyDescription */"Saudi Riyal",
                                                                                                                                                                                                                                                         /* popularity : Exotic */3
                                                                                                                                                                                                                                                       ],
                                                                                                                                                                                                                                                       /* :: */[
                                                                                                                                                                                                                                                         /* record */[
-                                                                                                                                                                                                                                                          /* currencyCode */"SAR",
-                                                                                                                                                                                                                                                          /* currencyDescription */"Saudi Riyal",
+                                                                                                                                                                                                                                                          /* currencyCode */"SBD",
+                                                                                                                                                                                                                                                          /* currencyDescription */"Solomon Islands Dollar",
                                                                                                                                                                                                                                                           /* popularity : Exotic */3
                                                                                                                                                                                                                                                         ],
                                                                                                                                                                                                                                                         /* :: */[
                                                                                                                                                                                                                                                           /* record */[
-                                                                                                                                                                                                                                                            /* currencyCode */"SBD",
-                                                                                                                                                                                                                                                            /* currencyDescription */"Solomon Islands Dollar",
+                                                                                                                                                                                                                                                            /* currencyCode */"SCR",
+                                                                                                                                                                                                                                                            /* currencyDescription */"Seychelles Rupee",
                                                                                                                                                                                                                                                             /* popularity : Exotic */3
                                                                                                                                                                                                                                                           ],
                                                                                                                                                                                                                                                           /* :: */[
                                                                                                                                                                                                                                                             /* record */[
-                                                                                                                                                                                                                                                              /* currencyCode */"SCR",
-                                                                                                                                                                                                                                                              /* currencyDescription */"Seychelles Rupee",
+                                                                                                                                                                                                                                                              /* currencyCode */"SDG",
+                                                                                                                                                                                                                                                              /* currencyDescription */"Sudanese Pound",
                                                                                                                                                                                                                                                               /* popularity : Exotic */3
                                                                                                                                                                                                                                                             ],
                                                                                                                                                                                                                                                             /* :: */[
                                                                                                                                                                                                                                                               /* record */[
-                                                                                                                                                                                                                                                                /* currencyCode */"SDG",
-                                                                                                                                                                                                                                                                /* currencyDescription */"Sudanese Pound",
-                                                                                                                                                                                                                                                                /* popularity : Exotic */3
+                                                                                                                                                                                                                                                                /* currencyCode */"SEK",
+                                                                                                                                                                                                                                                                /* currencyDescription */"Swedish Krona",
+                                                                                                                                                                                                                                                                /* popularity : LocallyPopular */2
                                                                                                                                                                                                                                                               ],
                                                                                                                                                                                                                                                               /* :: */[
                                                                                                                                                                                                                                                                 /* record */[
-                                                                                                                                                                                                                                                                  /* currencyCode */"SEK",
-                                                                                                                                                                                                                                                                  /* currencyDescription */"Swedish Krona",
-                                                                                                                                                                                                                                                                  /* popularity : Popular */1
+                                                                                                                                                                                                                                                                  /* currencyCode */"SGD",
+                                                                                                                                                                                                                                                                  /* currencyDescription */"Singapore Dollar",
+                                                                                                                                                                                                                                                                  /* popularity : Exotic */3
                                                                                                                                                                                                                                                                 ],
                                                                                                                                                                                                                                                                 /* :: */[
                                                                                                                                                                                                                                                                   /* record */[
-                                                                                                                                                                                                                                                                    /* currencyCode */"SGD",
-                                                                                                                                                                                                                                                                    /* currencyDescription */"Singapore Dollar",
+                                                                                                                                                                                                                                                                    /* currencyCode */"SHP",
+                                                                                                                                                                                                                                                                    /* currencyDescription */"Saint Helena Pound",
                                                                                                                                                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                                                                                                                                                   ],
                                                                                                                                                                                                                                                                   /* :: */[
                                                                                                                                                                                                                                                                     /* record */[
-                                                                                                                                                                                                                                                                      /* currencyCode */"SHP",
-                                                                                                                                                                                                                                                                      /* currencyDescription */"Saint Helena Pound",
-                                                                                                                                                                                                                                                                      /* popularity : Exotic */3
+                                                                                                                                                                                                                                                                      /* currencyCode */"SKK",
+                                                                                                                                                                                                                                                                      /* currencyDescription */"Slovak Koruna",
+                                                                                                                                                                                                                                                                      /* popularity : LocallyPopular */2
                                                                                                                                                                                                                                                                     ],
                                                                                                                                                                                                                                                                     /* :: */[
                                                                                                                                                                                                                                                                       /* record */[
-                                                                                                                                                                                                                                                                        /* currencyCode */"SKK",
-                                                                                                                                                                                                                                                                        /* currencyDescription */"Slovak Koruna",
-                                                                                                                                                                                                                                                                        /* popularity : LocallyPopular */2
+                                                                                                                                                                                                                                                                        /* currencyCode */"SLL",
+                                                                                                                                                                                                                                                                        /* currencyDescription */"Leone",
+                                                                                                                                                                                                                                                                        /* popularity : Exotic */3
                                                                                                                                                                                                                                                                       ],
                                                                                                                                                                                                                                                                       /* :: */[
                                                                                                                                                                                                                                                                         /* record */[
-                                                                                                                                                                                                                                                                          /* currencyCode */"SLL",
-                                                                                                                                                                                                                                                                          /* currencyDescription */"Leone",
+                                                                                                                                                                                                                                                                          /* currencyCode */"SOS",
+                                                                                                                                                                                                                                                                          /* currencyDescription */"Somali Shilling",
                                                                                                                                                                                                                                                                           /* popularity : Exotic */3
                                                                                                                                                                                                                                                                         ],
                                                                                                                                                                                                                                                                         /* :: */[
                                                                                                                                                                                                                                                                           /* record */[
-                                                                                                                                                                                                                                                                            /* currencyCode */"SOS",
-                                                                                                                                                                                                                                                                            /* currencyDescription */"Somali Shilling",
+                                                                                                                                                                                                                                                                            /* currencyCode */"SRD",
+                                                                                                                                                                                                                                                                            /* currencyDescription */"Surinam Dollar",
                                                                                                                                                                                                                                                                             /* popularity : Exotic */3
                                                                                                                                                                                                                                                                           ],
                                                                                                                                                                                                                                                                           /* :: */[
                                                                                                                                                                                                                                                                             /* record */[
-                                                                                                                                                                                                                                                                              /* currencyCode */"SRD",
-                                                                                                                                                                                                                                                                              /* currencyDescription */"Surinam Dollar",
+                                                                                                                                                                                                                                                                              /* currencyCode */"STD",
+                                                                                                                                                                                                                                                                              /* currencyDescription */"Dobra",
                                                                                                                                                                                                                                                                               /* popularity : Exotic */3
                                                                                                                                                                                                                                                                             ],
                                                                                                                                                                                                                                                                             /* :: */[
                                                                                                                                                                                                                                                                               /* record */[
-                                                                                                                                                                                                                                                                                /* currencyCode */"STD",
-                                                                                                                                                                                                                                                                                /* currencyDescription */"Dobra",
+                                                                                                                                                                                                                                                                                /* currencyCode */"SYP",
+                                                                                                                                                                                                                                                                                /* currencyDescription */"Syrian Pound",
                                                                                                                                                                                                                                                                                 /* popularity : Exotic */3
                                                                                                                                                                                                                                                                               ],
                                                                                                                                                                                                                                                                               /* :: */[
                                                                                                                                                                                                                                                                                 /* record */[
-                                                                                                                                                                                                                                                                                  /* currencyCode */"SYP",
-                                                                                                                                                                                                                                                                                  /* currencyDescription */"Syrian Pound",
+                                                                                                                                                                                                                                                                                  /* currencyCode */"SZL",
+                                                                                                                                                                                                                                                                                  /* currencyDescription */"Lilangeni",
                                                                                                                                                                                                                                                                                   /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                 ],
                                                                                                                                                                                                                                                                                 /* :: */[
                                                                                                                                                                                                                                                                                   /* record */[
-                                                                                                                                                                                                                                                                                    /* currencyCode */"SZL",
-                                                                                                                                                                                                                                                                                    /* currencyDescription */"Lilangeni",
+                                                                                                                                                                                                                                                                                    /* currencyCode */"THB",
+                                                                                                                                                                                                                                                                                    /* currencyDescription */"Baht",
                                                                                                                                                                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                   ],
                                                                                                                                                                                                                                                                                   /* :: */[
                                                                                                                                                                                                                                                                                     /* record */[
-                                                                                                                                                                                                                                                                                      /* currencyCode */"THB",
-                                                                                                                                                                                                                                                                                      /* currencyDescription */"Baht",
+                                                                                                                                                                                                                                                                                      /* currencyCode */"TJS",
+                                                                                                                                                                                                                                                                                      /* currencyDescription */"Somoni",
                                                                                                                                                                                                                                                                                       /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                     ],
                                                                                                                                                                                                                                                                                     /* :: */[
                                                                                                                                                                                                                                                                                       /* record */[
-                                                                                                                                                                                                                                                                                        /* currencyCode */"TJS",
-                                                                                                                                                                                                                                                                                        /* currencyDescription */"Somoni",
+                                                                                                                                                                                                                                                                                        /* currencyCode */"TMM",
+                                                                                                                                                                                                                                                                                        /* currencyDescription */"Manat",
                                                                                                                                                                                                                                                                                         /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                       ],
                                                                                                                                                                                                                                                                                       /* :: */[
                                                                                                                                                                                                                                                                                         /* record */[
-                                                                                                                                                                                                                                                                                          /* currencyCode */"TMM",
-                                                                                                                                                                                                                                                                                          /* currencyDescription */"Manat",
+                                                                                                                                                                                                                                                                                          /* currencyCode */"TND",
+                                                                                                                                                                                                                                                                                          /* currencyDescription */"Tunisian Dinar",
                                                                                                                                                                                                                                                                                           /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                         ],
                                                                                                                                                                                                                                                                                         /* :: */[
                                                                                                                                                                                                                                                                                           /* record */[
-                                                                                                                                                                                                                                                                                            /* currencyCode */"TND",
-                                                                                                                                                                                                                                                                                            /* currencyDescription */"Tunisian Dinar",
+                                                                                                                                                                                                                                                                                            /* currencyCode */"TOP",
+                                                                                                                                                                                                                                                                                            /* currencyDescription */"Pa'anga",
                                                                                                                                                                                                                                                                                             /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                           ],
                                                                                                                                                                                                                                                                                           /* :: */[
                                                                                                                                                                                                                                                                                             /* record */[
-                                                                                                                                                                                                                                                                                              /* currencyCode */"TOP",
-                                                                                                                                                                                                                                                                                              /* currencyDescription */"Pa'anga",
-                                                                                                                                                                                                                                                                                              /* popularity : Exotic */3
+                                                                                                                                                                                                                                                                                              /* currencyCode */"TRY",
+                                                                                                                                                                                                                                                                                              /* currencyDescription */"New Turkish Lira",
+                                                                                                                                                                                                                                                                                              /* popularity : Popular */1
                                                                                                                                                                                                                                                                                             ],
                                                                                                                                                                                                                                                                                             /* :: */[
                                                                                                                                                                                                                                                                                               /* record */[
-                                                                                                                                                                                                                                                                                                /* currencyCode */"TRY",
-                                                                                                                                                                                                                                                                                                /* currencyDescription */"New Turkish Lira",
-                                                                                                                                                                                                                                                                                                /* popularity : Popular */1
+                                                                                                                                                                                                                                                                                                /* currencyCode */"TTD",
+                                                                                                                                                                                                                                                                                                /* currencyDescription */"Trinidad and Tobago Dollar",
+                                                                                                                                                                                                                                                                                                /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                               ],
                                                                                                                                                                                                                                                                                               /* :: */[
                                                                                                                                                                                                                                                                                                 /* record */[
-                                                                                                                                                                                                                                                                                                  /* currencyCode */"TTD",
-                                                                                                                                                                                                                                                                                                  /* currencyDescription */"Trinidad and Tobago Dollar",
+                                                                                                                                                                                                                                                                                                  /* currencyCode */"TWD",
+                                                                                                                                                                                                                                                                                                  /* currencyDescription */"New Taiwan Dollar",
                                                                                                                                                                                                                                                                                                   /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                                 ],
                                                                                                                                                                                                                                                                                                 /* :: */[
                                                                                                                                                                                                                                                                                                   /* record */[
-                                                                                                                                                                                                                                                                                                    /* currencyCode */"TWD",
-                                                                                                                                                                                                                                                                                                    /* currencyDescription */"New Taiwan Dollar",
+                                                                                                                                                                                                                                                                                                    /* currencyCode */"TZS",
+                                                                                                                                                                                                                                                                                                    /* currencyDescription */"Tanzanian Shilling",
                                                                                                                                                                                                                                                                                                     /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                                   ],
                                                                                                                                                                                                                                                                                                   /* :: */[
                                                                                                                                                                                                                                                                                                     /* record */[
-                                                                                                                                                                                                                                                                                                      /* currencyCode */"TZS",
-                                                                                                                                                                                                                                                                                                      /* currencyDescription */"Tanzanian Shilling",
+                                                                                                                                                                                                                                                                                                      /* currencyCode */"UAH",
+                                                                                                                                                                                                                                                                                                      /* currencyDescription */"Hryvnia",
                                                                                                                                                                                                                                                                                                       /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                                     ],
                                                                                                                                                                                                                                                                                                     /* :: */[
                                                                                                                                                                                                                                                                                                       /* record */[
-                                                                                                                                                                                                                                                                                                        /* currencyCode */"UAH",
-                                                                                                                                                                                                                                                                                                        /* currencyDescription */"Hryvnia",
-                                                                                                                                                                                                                                                                                                        /* popularity : Exotic */3
+                                                                                                                                                                                                                                                                                                        /* currencyCode */"USD",
+                                                                                                                                                                                                                                                                                                        /* currencyDescription */"US Dollar",
+                                                                                                                                                                                                                                                                                                        /* popularity : Top */0
                                                                                                                                                                                                                                                                                                       ],
                                                                                                                                                                                                                                                                                                       /* :: */[
                                                                                                                                                                                                                                                                                                         /* record */[
-                                                                                                                                                                                                                                                                                                          /* currencyCode */"USD",
-                                                                                                                                                                                                                                                                                                          /* currencyDescription */"US Dollar",
-                                                                                                                                                                                                                                                                                                          /* popularity : Top */0
+                                                                                                                                                                                                                                                                                                          /* currencyCode */"XAF",
+                                                                                                                                                                                                                                                                                                          /* currencyDescription */"CFA Franc BEAC",
+                                                                                                                                                                                                                                                                                                          /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                                         ],
                                                                                                                                                                                                                                                                                                         /* :: */[
                                                                                                                                                                                                                                                                                                           /* record */[
-                                                                                                                                                                                                                                                                                                            /* currencyCode */"XAF",
-                                                                                                                                                                                                                                                                                                            /* currencyDescription */"CFA Franc BEAC",
+                                                                                                                                                                                                                                                                                                            /* currencyCode */"XCD",
+                                                                                                                                                                                                                                                                                                            /* currencyDescription */"East Carribean Dollar",
                                                                                                                                                                                                                                                                                                             /* popularity : Exotic */3
                                                                                                                                                                                                                                                                                                           ],
-                                                                                                                                                                                                                                                                                                          /* :: */[
-                                                                                                                                                                                                                                                                                                            /* record */[
-                                                                                                                                                                                                                                                                                                              /* currencyCode */"XCD",
-                                                                                                                                                                                                                                                                                                              /* currencyDescription */"East Carribean Dollar",
-                                                                                                                                                                                                                                                                                                              /* popularity : Exotic */3
-                                                                                                                                                                                                                                                                                                            ],
-                                                                                                                                                                                                                                                                                                            /* [] */0
-                                                                                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                                                                                          /* [] */0
                                                                                                                                                                                                                                                                                                         ]
                                                                                                                                                                                                                                                                                                       ]
                                                                                                                                                                                                                                                                                                     ]

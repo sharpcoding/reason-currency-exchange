@@ -2,26 +2,48 @@ open Belt;
 open AppModels;
 open AppSettings;
 open ControlModels;
-open IsoCurrencies;
+open MainComponentAux;
+
+type httpOperation =
+  | None
+  | AllCurrenciesLoading
+  | SingleCurrencyLoading;
 
 type state = {
+  inSelectCurrencies: list(IsoCurrencies.isoCurrencyDescription),
   currencyInfo: list(currencyExchangeRatePoint),
-  loading: bool,
+  userSelectedCurrencyCode: string,
+  httpOperation,
 };
 
 type action =
-  | Loaded(list(currencyExchangeRatePoint))
-  | Loading;
+  | StartLoadingAllSelectedCurrencies
+  | FinishLoadingAllSelectedCurrencies(list(currencyExchangeRatePoint))
+  | SetUserSelectedCurrency(string)
+  | RemoveCurrency(string)
+  | StartLoadingSingleCurrency(string)
+  | FinishLoadingSingleCurrency(currencyExchangeRatePoint);
+
+let initialCurrencyInfo = [
+  {currencyCode: "USD", point: None},
+  {currencyCode: "EUR", point: None},
+  {currencyCode: "CHF", point: None},
+];
+
+let initialCurrenciesFilteredSorted =
+  currenciesfilteredSorted(
+    ~selectedCurrencies=List.map(initialCurrencyInfo, c => c.currencyCode),
+  );
 
 let initialState = {
-  currencyInfo: [
-    {currencyCode: "USD", point: None},
-    {currencyCode: "EUR", point: None},
-    {currencyCode: "CHF", point: None},
-    {currencyCode: "CAD", point: None},
-    {currencyCode: "CZK", point: None},
-  ],
-  loading: false,
+  inSelectCurrencies: initialCurrenciesFilteredSorted,
+  userSelectedCurrencyCode:
+    switch (initialCurrenciesFilteredSorted) {
+    | [] => ""
+    | [h, ..._] => h.currencyCode
+    },
+  currencyInfo: initialCurrencyInfo,
+  httpOperation: None,
 };
 
 [@react.component]
@@ -30,81 +52,156 @@ let make = () => {
     React.useReducer(
       (state, action) =>
         switch (action) {
-        | Loaded(payload) => {currencyInfo: payload, loading: false}
-        | Loading => {...state, loading: true}
+        | StartLoadingAllSelectedCurrencies => {
+            ...state,
+            httpOperation: AllCurrenciesLoading,
+          }
+        | FinishLoadingAllSelectedCurrencies(payload) => {
+            ...state,
+            currencyInfo: payload,
+            httpOperation: None,
+          }
+        | SetUserSelectedCurrency(currencyCode) => {
+            ...state,
+            userSelectedCurrencyCode: currencyCode,
+          }
+        | RemoveCurrency(currencyCode) =>
+          let newCurrencyInfo =
+            List.reduce(state.currencyInfo, [], (acc, el) =>
+              switch (el.currencyCode == currencyCode) {
+              | false => List.concat(acc, [el])
+              | true => acc
+              }
+            );
+          let newInSelectCurrencies =
+            currenciesfilteredSorted(
+              ~selectedCurrencies=
+                List.map(newCurrencyInfo, c => c.currencyCode),
+            );
+          {
+            ...state,
+            currencyInfo: newCurrencyInfo,
+            inSelectCurrencies: newInSelectCurrencies,
+          };
+        | StartLoadingSingleCurrency(currencyCode) =>
+          switch (
+            List.filter(state.currencyInfo, el =>
+              el.currencyCode == currencyCode
+            )
+          ) {
+          | [a] => {...state, httpOperation: SingleCurrencyLoading}
+          | _ => {
+              ...state,
+              currencyInfo:
+                List.concat(
+                  state.currencyInfo,
+                  [{currencyCode, point: None}],
+                ),
+              httpOperation: SingleCurrencyLoading,
+            }
+          }
+        | FinishLoadingSingleCurrency(payload) =>
+          let newCurrencyInfo =
+            List.reduce(
+              state.currencyInfo,
+              [],
+              (acc, el) => {
+                let ne =
+                  switch (el.currencyCode == payload.currencyCode) {
+                  | false => el
+                  | true => {
+                      currencyCode: el.currencyCode,
+                      point: payload.point,
+                    }
+                  };
+                List.concat(acc, [ne]);
+              },
+            );
+          let newInSelectCurrencies =
+            currenciesfilteredSorted(
+              ~selectedCurrencies=
+                List.map(newCurrencyInfo, c => c.currencyCode),
+            );
+          {
+            userSelectedCurrencyCode:
+              switch (newInSelectCurrencies) {
+              | [] => ""
+              | [h, ..._] => h.currencyCode
+              },
+            currencyInfo: newCurrencyInfo,
+            inSelectCurrencies: newInSelectCurrencies,
+            httpOperation: None,
+          };
         },
       initialState,
     );
 
   React.useEffect0(() => {
-    dispatch(Loading);
-    let currencies = Belt.List.map(state.currencyInfo, ci => ci.currencyCode);
-    HttpService.fetchCurrencies(
-      currencies, (response: list(currencyExchangeRatePoint)) =>
-      dispatch(Loaded(response))
-    )
-    |> ignore;
+    dispatch(StartLoadingAllSelectedCurrencies);
     None;
   });
 
-  let convertInAppCurrencyToListItem =
-      (c: currencyExchangeRatePoint): listItem => {
-    let rate = () => {
-      switch (c.point) {
-      | Some(p) => Js.Float.toString(p.rate)
-      | None => "N/A"
-      };
-    };
-
-    let caption =
-      "Exchange rate of "
-      ++ baseCurrency
-      ++ " to "
-      ++ c.currencyCode
-      ++ ": "
-      ++ rate();
-
-    let result: listItem = {
-      id: baseCurrency ++ "-to-" ++ c.currencyCode,
-      caption,
-      actions: [],
-    };
-
-    result;
-  };
+  React.useEffect1(
+    () =>
+      switch (state.httpOperation) {
+      | SingleCurrencyLoading =>
+        HttpService.fetchCurrencies(
+          [state.userSelectedCurrencyCode],
+          (response: list(currencyExchangeRatePoint)) =>
+          switch (response) {
+          | [] => ()
+          | [h, ..._] => dispatch(FinishLoadingSingleCurrency(h))
+          }
+        )
+        |> ignore;
+        None;
+      | AllCurrenciesLoading =>
+        let currencies = List.map(state.currencyInfo, ci => ci.currencyCode);
+        HttpService.fetchCurrencies(
+          currencies, (response: list(currencyExchangeRatePoint)) =>
+          dispatch(FinishLoadingAllSelectedCurrencies(response))
+        )
+        |> ignore;
+        None;
+      | _ => None
+      },
+    List.toArray([state.httpOperation]),
+  );
 
   <>
     <h3> {React.string("ReasonML demo exchange rate application")} </h3>
     <div>
-      <select
-        onChange={e => {
-          let x = ReactEvent.Form.target(e)##value;
-          Js.log(x);
-        }}>
-        {React.array(
-           List.toArray(
-             List.map(isoCurrencies, (c: isoCurrencyDescription) =>
-               <option value={c.currencyCode}>
-                 {React.string(c.currencyCode ++ "-" ++ c.currencyDescription)}
-               </option>
-             ),
-           ),
-         )}
-      </select>
+      <CurrenciesComponent
+        currencies={state.inSelectCurrencies}
+        onSelectCurrency={currencyCode =>
+          dispatch(SetUserSelectedCurrency(currencyCode))
+        }
+      />
+      <button
+        onClick={_ =>
+          dispatch(
+            StartLoadingSingleCurrency(state.userSelectedCurrencyCode),
+          )
+        }>
+        {ReasonReact.string("Load currency to PLN exchange rate")}
+      </button>
       {React.array(
          List.toArray(
            List.map(state.currencyInfo, (i: currencyExchangeRatePoint) =>
              <ListItemComponent
                key={i.currencyCode}
                item={convertInAppCurrencyToListItem(i)}
+               onRemove={currencyCode =>
+                 dispatch(RemoveCurrency(currencyCode))
+               }
              />
            ),
          ),
        )}
       <hr />
-      {state.loading
-         ? <div> {React.string("Loading...")} </div>
-         : <div> {React.string("Data loaded !")} </div>}
+      {state.httpOperation == None
+         ? <div> {React.string("Incative")} </div>
+         : <div> {React.string("Loading...")} </div>}
     </div>
   </>;
 };

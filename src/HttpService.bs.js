@@ -29,7 +29,7 @@ function exchangeRateDecoder(json) {
         ];
 }
 
-var JsonDecode = {
+var JsonOps = {
   exchangeRateItemDecoder: exchangeRateItemDecoder,
   exchangeRateDecoder: exchangeRateDecoder
 };
@@ -66,17 +66,24 @@ function fetchCurrency(currencyCode) {
               }));
 }
 
+var InternalHttpOps = {
+  fetchCurrency: fetchCurrency
+};
+
 function fetchCurrencies(currencyCodes, callback) {
   Promise.all(Belt_List.toArray(Belt_List.map(currencyCodes, fetchCurrency))).then((function (response) {
-          Curry._1(callback, Belt_List.fromArray(response));
-          return Promise.resolve(/* () */0);
+            Curry._1(callback, Belt_List.fromArray(response));
+            return Promise.resolve(/* () */0);
+          })).catch((function (param) {
+          console.log("error");
+          return Promise.resolve(Curry._1(callback, /* [] */0));
         }));
   return /* () */0;
 }
 
 exports.url = url;
-exports.JsonDecode = JsonDecode;
+exports.JsonOps = JsonOps;
 exports.Dto = Dto;
-exports.fetchCurrency = fetchCurrency;
+exports.InternalHttpOps = InternalHttpOps;
 exports.fetchCurrencies = fetchCurrencies;
 /* No side effect */

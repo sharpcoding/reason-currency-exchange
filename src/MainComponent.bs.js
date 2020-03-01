@@ -6,6 +6,7 @@ var React = require("react");
 var Belt_List = require("bs-platform/lib/js/belt_List.js");
 var AppSettings$ReactHooksTemplate = require("./AppSettings.bs.js");
 var HttpService$ReactHooksTemplate = require("./HttpService.bs.js");
+var IsoCurrencies$ReactHooksTemplate = require("./IsoCurrencies.bs.js");
 var ListItemComponent$ReactHooksTemplate = require("./ListItemComponent.bs.js");
 
 var initialState = /* record */[
@@ -86,7 +87,17 @@ function MainComponent(Props) {
           ];
   };
   var match$1 = state[/* loading */1];
-  return React.createElement(React.Fragment, undefined, React.createElement("h3", undefined, "ReasonML demo exchange rate application"), React.createElement("div", undefined, Belt_List.toArray(Belt_List.map(state[/* currencyInfo */0], (function (i) {
+  return React.createElement(React.Fragment, undefined, React.createElement("h3", undefined, "ReasonML demo exchange rate application"), React.createElement("div", undefined, React.createElement("select", {
+                      onChange: (function (e) {
+                          var x = e.target.value;
+                          console.log(x);
+                          return /* () */0;
+                        })
+                    }, Belt_List.toArray(Belt_List.map(IsoCurrencies$ReactHooksTemplate.isoCurrencies, (function (c) {
+                                return React.createElement("option", {
+                                            value: c[/* currencyCode */0]
+                                          }, c[/* currencyCode */0] + ("-" + c[/* currencyDescription */1]));
+                              })))), Belt_List.toArray(Belt_List.map(state[/* currencyInfo */0], (function (i) {
                             return React.createElement(ListItemComponent$ReactHooksTemplate.make, {
                                         item: convertInAppCurrencyToListItem(i),
                                         key: i[/* currencyCode */0]

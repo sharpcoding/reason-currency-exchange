@@ -2,6 +2,7 @@ open Belt;
 open AppModels;
 open AppSettings;
 open ControlModels;
+open IsoCurrencies;
 
 type state = {
   currencyInfo: list(currencyExchangeRatePoint),
@@ -29,10 +30,7 @@ let make = () => {
     React.useReducer(
       (state, action) =>
         switch (action) {
-        | Loaded(payload) => {
-            currencyInfo: payload,
-            loading: false,
-          }
+        | Loaded(payload) => {currencyInfo: payload, loading: false}
         | Loading => {...state, loading: true}
         },
       initialState,
@@ -78,20 +76,35 @@ let make = () => {
   <>
     <h3> {React.string("ReasonML demo exchange rate application")} </h3>
     <div>
+      <select
+        onChange={e => {
+          let x = ReactEvent.Form.target(e)##value;
+          Js.log(x);
+        }}>
+        {React.array(
+           List.toArray(
+             List.map(isoCurrencies, (c: isoCurrencyDescription) =>
+               <option value={c.currencyCode}>
+                 {React.string(c.currencyCode ++ "-" ++ c.currencyDescription)}
+               </option>
+             ),
+           ),
+         )}
+      </select>
       {React.array(
          List.toArray(
            List.map(state.currencyInfo, (i: currencyExchangeRatePoint) =>
-             <ListItemComponent key={i.currencyCode} item={convertInAppCurrencyToListItem(i)} />
+             <ListItemComponent
+               key={i.currencyCode}
+               item={convertInAppCurrencyToListItem(i)}
+             />
            ),
          ),
        )}
-       <hr />
-       {
-        switch (state.loading) {
-          | true => <div>{React.string("Loading...")}</div> 
-          | false => <div>{React.string("Data loaded !")}</div> 
-        }
-      }
+      <hr />
+      {state.loading
+         ? <div> {React.string("Loading...")} </div>
+         : <div> {React.string("Data loaded !")} </div>}
     </div>
   </>;
 };

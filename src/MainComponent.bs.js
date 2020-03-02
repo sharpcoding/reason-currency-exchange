@@ -188,7 +188,7 @@ function MainComponent(Props) {
                       onClick: (function (param) {
                           return Curry._1(dispatch, /* StartLoadingSingleCurrency */Block.__(3, [state[/* userSelectedCurrencyCode */2]]));
                         })
-                    }, "Load currency to PLN exchange rate"), Belt_List.toArray(Belt_List.map(state[/* currencyInfo */1], (function (i) {
+                    }, "Add and load exchange rate"), Belt_List.toArray(Belt_List.map(state[/* currencyInfo */1], (function (i) {
                             return React.createElement(ListItemComponent$ReactHooksTemplate.make, {
                                         item: MainComponentAux$ReactHooksTemplate.convertInAppCurrencyToListItem(i),
                                         onRemove: (function (currencyCode) {

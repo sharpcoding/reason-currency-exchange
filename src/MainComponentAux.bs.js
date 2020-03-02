@@ -2,6 +2,9 @@
 'use strict';
 
 var List = require("bs-platform/lib/js/list.js");
+var Block = require("bs-platform/lib/js/block.js");
+var Curry = require("bs-platform/lib/js/curry.js");
+var Printf = require("bs-platform/lib/js/printf.js");
 var Caml_builtin_exceptions = require("bs-platform/lib/js/caml_builtin_exceptions.js");
 var AppSettings$ReactHooksTemplate = require("./AppSettings.bs.js");
 var IsoCurrencies$ReactHooksTemplate = require("./IsoCurrencies.bs.js");
@@ -42,7 +45,46 @@ function convertInAppCurrencyToListItem(c) {
       return "N/A";
     }
   };
-  var caption = "Exchange rate of " + (AppSettings$ReactHooksTemplate.baseCurrency + (" to " + (c[/* currencyCode */0] + (": " + rate(/* () */0)))));
+  var caption = Curry._6(Printf.sprintf(/* Format */[
+            /* String */Block.__(2, [
+                /* No_padding */0,
+                /* String_literal */Block.__(11, [
+                    " to ",
+                    /* String */Block.__(2, [
+                        /* No_padding */0,
+                        /* String_literal */Block.__(11, [
+                            ": ",
+                            /* String */Block.__(2, [
+                                /* No_padding */0,
+                                /* String_literal */Block.__(11, [
+                                    " (pay ",
+                                    /* String */Block.__(2, [
+                                        /* No_padding */0,
+                                        /* Char_literal */Block.__(12, [
+                                            /* " " */32,
+                                            /* String */Block.__(2, [
+                                                /* No_padding */0,
+                                                /* String_literal */Block.__(11, [
+                                                    " for 1 ",
+                                                    /* String */Block.__(2, [
+                                                        /* No_padding */0,
+                                                        /* Char_literal */Block.__(12, [
+                                                            /* ")" */41,
+                                                            /* End_of_format */0
+                                                          ])
+                                                      ])
+                                                  ])
+                                              ])
+                                          ])
+                                      ])
+                                  ])
+                              ])
+                          ])
+                      ])
+                  ])
+              ]),
+            "%s to %s: %s (pay %s %s for 1 %s)"
+          ]), AppSettings$ReactHooksTemplate.baseCurrency, c[/* currencyCode */0], rate(/* () */0), rate(/* () */0), AppSettings$ReactHooksTemplate.baseCurrency, c[/* currencyCode */0]);
   return /* record */[
           /* id */c[/* currencyCode */0],
           /* caption */caption,

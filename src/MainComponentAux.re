@@ -42,13 +42,13 @@ let currenciesfilteredSorted = (~selectedCurrencies: list(string)) => {
       };
     };
 
-    let caption =
-      "Exchange rate of "
-      ++ baseCurrency
-      ++ " to "
-      ++ c.currencyCode
-      ++ ": "
-      ++ rate();
+    let caption = Printf.sprintf("%s to %s: %s (pay %s %s for 1 %s)",
+      baseCurrency,
+      c.currencyCode,
+      rate(),
+      rate(),
+      baseCurrency,
+      c.currencyCode);
 
     let result: ControlModels.listItem = {
       id: c.currencyCode,

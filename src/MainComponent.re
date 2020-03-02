@@ -183,7 +183,7 @@ let make = () => {
             StartLoadingSingleCurrency(state.userSelectedCurrencyCode),
           )
         }>
-        {ReasonReact.string("Load currency to PLN exchange rate")}
+        {ReasonReact.string("Add and load exchange rate")}
       </button>
       {React.array(
          List.toArray(
